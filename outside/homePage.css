@@ -23,6 +23,13 @@ header {
 
 .logo {
     font-size: 1.25rem;
+    transition: transform 0.5s ease; 
+}
+.logo:hover {
+    transform: scale(1.25); 
+}
+.logo:hover::before, .logo:hover::after {
+    width: 0;
 }
 
 .nav-bar {
@@ -48,6 +55,31 @@ header {
 
 a {
     text-decoration: none;
+    position: relative;
+    font-weight: bolder;
+}
+a::before, a::after {
+    margin-top: 5px;
+    content: '';
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: white;
+    transition: width 0.5s ease;
+    border-radius: 50px;
+}
+a::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+a::after {
+    right: 50%;
+    transform: translateX(50%);
+}
+a:hover::before, a:hover::after {
+    width: 100%;
 }
 
 .hamburger-menu {
@@ -55,11 +87,15 @@ a {
     cursor: pointer;
 }
 
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
+/* INTRODUCTION CONTAINER */
+#profile {
+    margin-top: 10%;
+}
+
+.profile__pic-container {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
