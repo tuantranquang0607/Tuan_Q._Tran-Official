@@ -1,2 +1,3 @@
-# Q.-Tuan-Tran---Official
-My only legitimate, personal portfolio website.
+# Q._Tuan_Tran-Official
+
+My only legitimate personal portfolio website.
