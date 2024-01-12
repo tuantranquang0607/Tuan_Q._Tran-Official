@@ -39,15 +39,13 @@
             <p class="profile__text__p1">
                 Hi👋, I'm <br> 
                 <span class="name">Tuan</span>
-                <button class="speaker" (click)="playPronunciation()">(🔊)</button>😊,
+                <button class="speaker" onclick="playPronunciation()">(🔊)</button>😊,
             </p>
-            <audio src="../asset/pronunciation_vi_tuấn.mp3"></audio>
+            <audio id="pronunciationAudio" src="../asset/pronunciation_vi_tuấn.mp3"></audio>
             <p class="profile__text__p2">who's trying to be <span class="text"></span></p>
     
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('../../assets/images/Tuan Tran - Resume.pdf')" >
-                    Download My CV
-                </button>
+                <button class="btn btn-color-2">Download My CV</button>
             </div>
         </div>
     </section>
