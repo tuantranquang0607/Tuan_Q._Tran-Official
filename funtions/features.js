@@ -1,5 +1,5 @@
-// Text writing animation
 document.addEventListener('DOMContentLoaded', function () {
+    // Text writing animation
     const typed = new Typed(".text", {
         strings: ["a Web developer!", "a Game developer!", "an UI designer!", "a digital artist!"],
         typeSpeed: 50,
@@ -7,24 +7,33 @@ document.addEventListener('DOMContentLoaded', function () {
         backDelay: 50,
         loop: true
     });
+
+    // Function to play the pronunciation audio
+    function playPronunciation() {
+        const pronunciationAudio = document.getElementById('pronunciationAudio');
+        pronunciationAudio.play();
+    };
+
+    const speakerButton = document.querySelector('.speaker');
+    speakerButton.addEventListener('click', playPronunciation);
+
+    // Funtion to toggle the menu
+    function toggleMenu() {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        menu.classList.toggle("open");
+        icon.classList.toggle("open");
+    };
+
+    const hamburgerIcon = document.querySelector(".hamburger-icon");
+    hamburgerIcon.addEventListener('click', toggleMenu);
 });
 
-// Function to play the pronunciation audio
-function playPronunciation() {
-    const pronunciationAudio = document.getElementById('pronunciationAudio');
-    pronunciationAudio.play();
-}
 
-const playButton = document.getElementById('playButton');
-const pronunciationAudio = document.getElementById('pronunciationAudio');
 
-playButton.addEventListener('click', playPronunciation);
 
-// Funtion to toggle the menu
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}
+
+
+
+
 
