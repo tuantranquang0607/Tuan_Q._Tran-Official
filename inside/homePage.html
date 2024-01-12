@@ -1,54 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../outside/homePage.css" />
+    <script src="../funtions/features.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../outside/homePage.css">
-    <title>Home Page</title>
-    <script src="../funtions/features.js"></script>
-</head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="#profile">Q. Tuấn Trần</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-<body>
-    <header>
-        <div class="nav-bar">
-            <a href="../inside/homePage.html" class="logo">Q. Tuấn Trần</a>
+    <nav id="hamburger-nav">
+      <div class="logo">Q. Tuấn Trần</div>
 
-            <div class="navigation">
-                <div class="nav-items">
-                    <div class="nav-close-btn"></div>
-
-                    <a href="../inside/webProjects.html">Web Projects</a>
-                    <a href="../inside/gameProjects.html">Game Projects</a>
-                    <a href="../inside/uiProjects.html">UI Projects</a>
-                    <a href="../inside/artWorks.html">Artworks</a>
-                </div>
-            </div>
-
-            <div class="nav-menu-btn"></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </header>
 
-    <!-- Introduction container -->
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
     <section id="profile">
-        <div>
-            <img class="profile__pic-container" src="../asset/right-face-selfie.jpg"/>
-        </div>
-    
-        <div class="profile__text">
-            <p class="profile__text__p1">
-                Hi👋, I'm <br> 
-                <span class="name">Tuan</span>
-                <button class="speaker" onclick="playPronunciation()">(🔊)</button>😊,
-            </p>
-            <audio id="pronunciationAudio" src="../asset/pronunciation_vi_tuấn.mp3"></audio>
-            <p class="profile__text__p2">who's trying to be <span class="text"></span></p>
-    
-            <div class="btn-container">
-                <button class="btn btn-color-2">Download My CV</button>
-            </div>
-        </div>
-    </section>
-</body>
+      <div class="section__pic-container">
+        <img src="../assets/right-face-selfie.jpg"/>
+      </div>
 
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <button class="speaker" onclick="playPronunciation()"><h1 class="title">Tuấn,</h1></button>
+        <audio id="pronunciationAudio" src="../assets/pronunciation_vi_tuấn.mp3"></audio>
+        <p class="section__text__p2">who's trying to be<br> <span class="text"></span></p>
+        
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('../assets/Q. Tuan Tran - Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="../assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="../assets/email.png"
+            alt="Email icon"
+            class="icon"
+            onclick="location.href='mailto:tuan.tran6703@gmail.com'"
+            />
+          <img
+            src="../assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+          <img
+            src="../assets/facebook.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://www.facebook.com/profile.php?id=100030823129717'"
+          />
+          <img
+            src="../assets/instagram.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/mr.moony__/'"
+          />
+          <img
+            src="../assets/steam.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://steamcommunity.com/profiles/76561199139404335/'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="../assets/email.png"
+            class="icon contact-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">tuan.tran6703@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="../assets/linkedin.png"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">https://www.linkedin.com/in/q-tuan-tran/</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img
+              src="../assets/github.png"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com">https://github.com/tuantranquang0607</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img
+              src="../assets/facebook.png"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.facebook.com/profile.php?id=100030823129717">https://www.facebook.com/profile.php?id=100030823129717</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img
+              src="../assets/instagram.png"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.instagram.com/mr.moony__/">https://www.instagram.com/mr.moony__/</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img
+              src="../assets/instagram.png"
+              class="icon contact-icon"
+            />
+            <p><a href="https://steamcommunity.com/profiles/76561199139404335/">https://steamcommunity.com/profiles/76561199139404335/</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
+  </body>
 </html>
