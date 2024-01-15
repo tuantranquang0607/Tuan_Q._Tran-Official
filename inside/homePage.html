@@ -13,14 +13,14 @@
   <body>
     <!-- Menu -->
     <nav id="desktop-nav">
-      <div class="logo"><a class="no-loading-bar" href="../inside/homePage.html">Q. Tuấn Trần</a></div>
+      <div class="logo" onmouseover="shuffleText()"><a class="no-loading-bar" href="../inside/homePage.html">Q. Tuấn Trần</a></div>
 
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
+          <li><a class="sapphire" href="#about">About</a></li>
           <!-- <li><a href="#experience">Experience</a></li> -->
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="ruby" href="#projects">Projects</a></li>
+          <li><a class="emerald" href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -52,7 +52,7 @@
 
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <button class="speaker" onclick="playPronunciation()"><h1 class="title">Tuấn,</h1></button>
+        <button class="speaker" onclick="playPronunciation()"> <h1 class="title">Tuấn,</h1> </button>
         <audio id="pronunciationAudio" src="../assets/pronunciation_vi_tuấn.mp3"></audio>
         <p class="section__text__p2">who's trying to be<br> <span class="text"></span></p>
         
@@ -280,4 +280,14 @@
       </nav>
     </footer>
   </body>
+
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  <script>
+    kofiWidgetOverlay.draw('tuantran6703', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Support me',
+      'floating-chat.donateButton.background-color': '#323842',
+      'floating-chat.donateButton.text-color': '#fff'
+    });
+  </script>
 </html>

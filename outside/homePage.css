@@ -1,6 +1,5 @@
 /* GENERAL */
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 * {
   margin: 0;
@@ -8,7 +7,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Pacifico', cursive;
 }
 
 html {
@@ -19,6 +18,7 @@ html {
 /* DESKTOP NAV */
 nav, .nav-links {
   display: flex;
+  font-family: 'Pacifico', cursive;
 }
 
 nav {
@@ -33,20 +33,39 @@ nav {
   font-size: 1.5rem;
 }
 
+.sapphire:hover {
+  color: #0508aa;
+}
+.sapphire:hover::before, .sapphire:hover::after {
+  background-color: #0508aa;
+}
+
+.ruby:hover {
+  color: #bb1425;
+}
+.ruby:hover::before, .ruby:hover::after {
+  background-color: #bb1425;
+}
+
+.emerald:hover {
+  color: #07a11c;
+}
+.emerald:hover::before, .emerald:hover::after {
+  background-color: #07a11c;
+}
+
 a {
   color: black;
   text-decoration: none;
   position: relative;
-  font-family: 'Cabin Sketch', sans-serif;
 }
 a::before, a::after {
   content: '';
   position: absolute;
-  top: 120%;
+  top: 100%;
   bottom: 0;
   width: 0;
   height: 5px;
-  background-color: black;
   transition: width 0.25s ease;
   border-radius: 50px;
 }
@@ -240,21 +259,24 @@ section {
   gap: 1rem;
 }
 
-/* ICONS */
 
+/* ICONS */
 .icon {
   cursor: pointer;
   height: 2rem;
 }
+.icon:hover {
+  transform: scale(1.25);
+  transition: transform 0.5s ease;
+}
+
 
 /* BUTTONS */
-
 .btn-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
-
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
@@ -262,35 +284,25 @@ section {
   width: 8rem;
   border-radius: 2rem;
 }
-
-.btn-color-1,
-.btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+.btn-color-1, .btn-color-2 {
+  border: rgb(0, 0, 0) 0.1rem solid;
 }
-
-.btn-color-1:hover,
-.btn-color-2:hover {
+.btn-color-1:hover, .btn-color-2:hover {
   cursor: pointer;
 }
-
-.btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
+.btn-color-1, .btn-color-2:hover {
+  background: rgb(0, 0, 0);
   color: white;
 }
-
 .btn-color-1:hover {
   background: rgb(0, 0, 0);
 }
-
 .btn-color-2 {
   background: none;
 }
-
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: rgb(255, 255, 255) 0rem solid;
 }
-
 .btn-container {
   gap: 1rem;
 }
@@ -427,6 +439,11 @@ section {
   flex-direction: column;
   height: 70vh;
 }
+#contact p:hover a {
+  font-size: larger; 
+  transition: font-size 0.3s ease; 
+}
+
 
 .contact-info-upper-container {
   display: flex;
@@ -458,14 +475,30 @@ section {
   width: 2rem;
 }
 
+.contact-info-upper-container a:hover {
+  transition: transform 0.5s ease;
+  transform: scale(1.25);
+}
+
+
 /* FOOTER SECTION */
 footer {
-  height: 1rem;
+  height: 3rem; 
 }
 
 footer p {
   text-align: center;
 }
+
+footer .nav-links a {
+  display: inline-block;
+  transition: transform 0.75s ease;
+}
+
+footer .nav-links a:hover {
+  transform: scaleX(-1);
+}
+
 
 @media screen and (max-width: 1400px) {
     #profile {
