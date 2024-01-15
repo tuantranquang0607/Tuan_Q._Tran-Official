@@ -11,12 +11,14 @@
   </head>
 
   <body>
+    <!-- Menu -->
     <nav id="desktop-nav">
-      <div class="logo"><a href="#profile">Q. Tuấn Trần</a></div>
+      <div class="logo"><a class="no-loading-bar" href="../inside/homePage.html">Q. Tuấn Trần</a></div>
+
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <!-- <li><a href="#experience">Experience</a></li> -->
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -35,13 +37,14 @@
 
         <div class="menu-links">
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <!-- <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> -->
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
 
+    <!-- Home Section -->
     <section id="profile">
       <div class="section__pic-container">
         <img src="../assets/right-face-selfie.jpg"/>
@@ -64,6 +67,7 @@
             Contact Info
           </button>
         </div>
+        
         <div id="socials-container">
           <img
             src="../assets/linkedin.png"
@@ -105,6 +109,7 @@
       </div>
     </section>
 
+    <!-- About Section -->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -112,228 +117,100 @@
         <div class="about-details-container">
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              Born in a vibrant and bustling city on the northeastern side of the Pacific Ocean, 
+              I am Quang Tuan Tran—Tuan being my first name, Quang my middle name, and Tran my last name. 
+              In the spirit of 'When in Rome, do as the Romans do,' I embraced the name Thomas, 
+              inspired by the inventor of Thomas Edison. Thriving in my city of origin, I embarked on a transformative journey to Canada, 
+              driven by the ambition to pursue my dreams. Throughout my academic tenure at NBCC and outside NBCC, 
+              I meticulously honed my skills in a diverse array of programming languages and frameworks.
+            </p>
+            <br>
+            <div class="images-of-languages">
+              <img src="../assets/html-logo.png" >
+              <img src="../assets/css-logo.png" >
+              <img src="../assets/javascript-logo.png" >
+              <img src="../assets/jquery-logo.png">
+              <img src="../assets/typescript-logo.png">
+              <img src="../assets/angular-logo.png">
+              <img src="../assets/nodejs-logo.png">
+              <img src="../assets/expressjs-logo.png">
+              <img src="../assets/json-logo.png">
+              <img src="../assets/mongodb-logo.png">
+              <img src="../assets/mongoose-logo.png">
+              <img src="../assets/restapi-logo.png">
+              <img src="../assets/react-logo.png">
+              <img src="../assets/c++-logo.png">
+              <img src="../assets/csharp-logo.jpg">
+              <img src="../assets/java-logo.png">
+              <img src="../assets/selenium-logo.png">
+              <img src="../assets/msqls-logo.png">
+              <img src="../assets/figma-logo.png">
+              <img src="../assets/procreate-logo.png">
+            </div>
+            <br>
+            <p>
+              In addition to my technical pursuits, I find joy in the creative realms of UI design and digital art, 
+              which I actively engage in as a passionate hobby. This avocation allows me to blend technical precision with artistic flair, 
+              contributing to a well-rounded skill set. I believe that the fusion of technology and design not only enhances the user experience 
+              but also adds a layer of aesthetic appeal to every project. This dual proficiency positions me 
+              as a versatile professional capable of bridging the gap between functionality and visual elegance.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="experience">
+    <!-- Experience Section -->
+    <!-- <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
+
       <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
+        <p>
+
+        </p>
       </div>
-    </section>
+    </section> -->
     
+    <!-- Projects Section -->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
+
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
+          <div class="web-projects">
+            <a href="../inside/webProjects.html">
+              <img src="../assets/web-projects.png" alt="Description of the image">
+            </a>
+            <h2>Web Projects</h2>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
+
+          <div class="game-projects">
+            <a href="../inside/gameProjects.html">
+              <img src="../assets/game-projects.png" alt="Description of the image">
+            </a>
+            <h2>Game Projects</h2>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
+
+          <div class="ui-projects">
+            <a href="../inside/uiProjects.html">
+              <img src="../assets/ui-projects.jpg" alt="Description of the image">
+            </a>
+            <h2>UI Projects</h2>
+          </div>
+
+          <div class="artworks">
+            <a href="../inside/artWorks.html">
+              <img src="../assets/artworks.jpg" alt="Description of the image">
+            </a>
+            <h2>Artworks</h2>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -345,6 +222,7 @@
           />
           <p><a href="mailto:examplemail@gmail.com">tuan.tran6703@gmail.com</a></p>
         </div>
+
         <div class="contact-info-container">
           <img
             src="../assets/linkedin.png"
@@ -352,6 +230,7 @@
           />
           <p><a href="https://www.linkedin.com">https://www.linkedin.com/in/q-tuan-tran/</a></p>
         </div>
+
         <div class="contact-info-container">
             <img
               src="../assets/github.png"
@@ -359,6 +238,7 @@
             />
             <p><a href="https://www.linkedin.com">https://github.com/tuantranquang0607</a></p>
         </div>
+
         <div class="contact-info-container">
             <img
               src="../assets/facebook.png"
@@ -366,6 +246,7 @@
             />
             <p><a href="https://www.facebook.com/profile.php?id=100030823129717">https://www.facebook.com/profile.php?id=100030823129717</a></p>
         </div>
+
         <div class="contact-info-container">
             <img
               src="../assets/instagram.png"
@@ -373,6 +254,7 @@
             />
             <p><a href="https://www.instagram.com/mr.moony__/">https://www.instagram.com/mr.moony__/</a></p>
         </div>
+
         <div class="contact-info-container">
             <img
               src="../assets/steam.png"
@@ -383,13 +265,14 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#profile">Home</a></li>
+            <li><a href="#desktop-nav">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <!-- <li><a href="#experience">Experience</a></li> -->
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
