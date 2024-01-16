@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Text writing animation
     const typed = new Typed(".text", {
-        strings: ["a Web developer!", "a Game developer!", "an UI designer!", "a digital artist!"],
-        typeSpeed: 50,
+        strings: ["a Web developer 😗", "a Game developer 😎", "an UI designer 🤨", "a digital artist 🤔"],
+        typeSpeed: 55,
         backSpeed: 25,
-        backDelay: 50,
+        backDelay: 75,
         loop: true
     });
 
@@ -28,21 +28,21 @@ document.addEventListener('DOMContentLoaded', function () {
     const hamburgerIcon = document.querySelector(".hamburger-icon");
     hamburgerIcon.addEventListener('click', toggleMenu);
 
-    // Function to shuffle the text
-    function shuffleText() {
-        const textElement = document.querySelector('.logo a');
-        const text = textElement.textContent;
-        const shuffledText = shuffleArray([...text]).join('');
-        textElement.textContent = shuffledText;
+    // Function to scroll to the top of the page
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }
 
-    function shuffleArray(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
-        }
-        return array;
-    };
+    const upArrowLink = document.querySelector('.up-arrow');
+    if (upArrowLink) {
+        upArrowLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            scrollToTop();
+        });
+    }
 });
 
 
