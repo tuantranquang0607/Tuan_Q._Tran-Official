@@ -1,0 +1,196 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pacifico', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* SECTIONS */
+section {
+    padding-top: 4vh;
+    margin: 0 7.5rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+  
+  .section-container {
+    display: flex;
+  }
+
+
+/* DESKTOP NAV */
+#desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    margin: 0 7.5rem;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+
+.nav-links {
+    gap: 2.5rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+nav, .nav-links {
+    display: flex;
+    font-family: 'Pacifico', cursive;
+}
+
+.sapphire:hover {
+    color: #0508aa;
+}
+.sapphire:hover::before, .sapphire:hover::after {
+    background-color: #0508aa;
+}
+
+.ruby:hover {
+    color: #bb1425;
+}
+.ruby:hover::before, .ruby:hover::after {
+    background-color: #bb1425;
+}
+
+.emerald:hover {
+    color: #07a11c;
+}
+.emerald:hover::before, .emerald:hover::after {
+    background-color: #07a11c;
+}
+
+.amethyst:hover {
+    color: #a00070;
+}
+.amethyst:hover::before, .amethyst:hover::after {
+    background-color: #a00070;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+a::before, a::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    transition: width 0.25s ease;
+    border-radius: 50px;
+}
+a::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+a::after {
+    right: 50%;
+    transform: translateX(50%);
+}
+a:hover::before, a:hover::after {
+    width: 100%;
+}
+
+.logo a {
+    font-size: 2rem;
+}
+.logo a:hover {
+    cursor: pointer;
+}
+.logo a:hover::before, .logo a:hover::after {
+    display: none;
+}
+.logo {
+    transition: transform 0.5s ease; 
+}
+.logo:hover {
+    transform: scale(1.1); 
+}
+
+
+/* HAMBURGER MENU */
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links li {
+    list-style: none;
+}
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+.hamburger-icon span:first-child {
+    transform: none;
+}
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+.hamburger-icon span:first-child {
+    transform: none;
+}

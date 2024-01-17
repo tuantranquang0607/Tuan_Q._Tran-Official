@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="../outside/homePage.css" />
     <script src="../funtions/features.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -13,7 +13,7 @@
   <body>
     <!-- Menu -->
     <nav id="desktop-nav">
-      <div class="logo"><a class="no-loading-bar" href="../inside/homePage.html">Q. Tuấn Trần</a></div>
+      <div class="logo"><a href="../inside/homePage.html">Q. Tuấn Trần</a></div>
 
       <div>
         <ul class="nav-links">
@@ -52,7 +52,7 @@
 
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <button class="speaker" onclick="playPronunciation()"> <h1 class="title">Tuấn,</h1> </button>
+        <button class="speaker" onclick="playPronunciation()"> <h1 class="title">Tuấn,</h1></button>
         <audio id="pronunciationAudio" src="../assets/pronunciation_vi_tuấn.mp3"></audio>
         <p class="section__text__p2">who's trying to be<br> <span class="text"></span></p>
         
@@ -181,34 +181,30 @@
       <h1 class="title">Projects</h1>
 
       <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="web-projects">
-            <a href="../inside/webProjects.html">
-              <img src="../assets/web-projects.png" alt="Description of the image">
-            </a>
+        <div class="project-grid">
+          <article class="project-card">
+            <a href="../inside/webProjects.html"> <img src="../assets/web-projects.png"></a>
+            
             <h2>Web Projects</h2>
-          </div>
+          </article>
 
-          <div class="game-projects">
-            <a href="../inside/gameProjects.html">
-              <img src="../assets/game-projects.png" alt="Description of the image">
-            </a>
+          <article class="project-card">
+            <a href="../inside/gameProjects.html"> <img src="../assets/game-projects.png"></a>
+            
             <h2>Game Projects</h2>
-          </div>
+          </article>
 
-          <div class="ui-projects">
-            <a href="../inside/uiProjects.html">
-              <img src="../assets/ui-projects.jpg" alt="Description of the image">
-            </a>
-            <h2>UI Projects</h2>
-          </div>
+          <article class="project-card">
+            <a href="../inside/uiProjects.html"><img src="../assets/ui-projects.jpg"></a>
 
-          <div class="artworks">
-            <a href="../inside/artWorks.html">
-              <img src="../assets/artworks.jpg" alt="Description of the image">
-            </a>
+            <h2>Game Projects</h2>
+          </article>
+
+          <article class="project-card">
+            <a href="../inside/artWorks.html"><img src="../assets/artworks.jpg"></a>
+
             <h2>Artworks</h2>
-          </div>
+          </article>
         </div>
       </div>
     </section>

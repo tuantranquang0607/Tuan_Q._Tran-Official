@@ -31,11 +31,11 @@ section {
 /* ICONS */
 .icon {
   cursor: pointer;
-  height: 2rem;
+  height: 3.5rem;
 }
 .icon:hover {
   transform: scale(1.25);
-  transition: transform 0.5s ease;
+  transition: transform 0.75s ease;
 }
 
 
@@ -81,7 +81,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 15vh;
+  height: 10vh;
   margin: 0 7.5rem;
 }
 
@@ -163,7 +163,7 @@ a:hover::before, a:hover::after {
   transition: transform 0.5s ease; 
 }
 .logo:hover {
-  transform: scale(1.15); 
+  transform: scale(1.1); 
 }
 
 
@@ -253,7 +253,6 @@ a:hover::before, a:hover::after {
   justify-content: center;
   gap: 7.5rem;
   height: 80vh;
-  margin-top: -5vh;
 }
 
 .speaker {
@@ -274,24 +273,19 @@ a:hover::before, a:hover::after {
   margin: auto 0;
   border-radius: 15px;
 }
-
 .section__text {
   align-self: center;
   text-align: center;
 }
-
-.section__text p {
-  font-weight: 600;
-}
-
 .section__text__p1 {
   text-align: center;
   margin-bottom: 0.75rem;
+  font-size: xx-large;
 }
-
 .section__text__p2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  font-size: xx-large;
 }
 
 .title {
@@ -313,18 +307,10 @@ a:hover::before, a:hover::after {
   overflow: hidden;
 }
 
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
 .about-details-container {
   justify-content: center;
   flex-direction: column;
   font-size: 16.25px;
-}
-.about-containers, .about-details-container {
-  display: flex;
 }
 
 .section-container {
@@ -369,20 +355,11 @@ a:hover::before, a:hover::after {
   position: relative;
 }
 
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-} */
-
 
 /* PROJECTS SECTION */
 #projects {
   position: relative;
   margin-bottom: 15vh;
-}
-#projects .title {
-  margin-bottom: 10vh;
 }
 
 .about-containers {
@@ -397,18 +374,34 @@ a:hover::before, a:hover::after {
   font-weight: 0;
 }
 
-.web-projects img, .game-projects img, .ui-projects img, .artworks img {
-  width: 250px;
+.project-grid {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-card img {
+  width: 100%;
   height: 425px;
+  object-fit: cover;
+  object-position: center;
   border-radius: 15px;
   filter: grayscale(100%);
-  justify-content: space-between;
-  object-fit: cover;
 }
-.web-projects img:hover, .game-projects img:hover, .ui-projects img:hover, .artworks img:hover {
+.project-card img:hover {
   filter: grayscale(0%);
 }
-.web-projects h2, .game-projects h2, .ui-projects h2, .artworks h2 {
+.project-card h2 {
+  margin-top: 0.5rem;
   text-align: center;
 }
 
@@ -465,7 +458,6 @@ footer .nav-links a {
   transition: transform 0.75s ease;
   font-size: larger;
 }
-
 footer .nav-links a:hover {
   transform: scaleX(-1);
 }
@@ -485,6 +477,7 @@ footer .nav-links a:hover {
 }
 
 
+/* RESPONSIVE DESIGN */
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -518,8 +511,8 @@ footer .nav-links a:hover {
     margin: 0 5%;
   }
   .section__pic-container {
-      margin-bottom:-175px;
-      padding: 0;
+    margin-bottom:-175px;
+    padding: 0;
   }
   .section__pic-container img{
     width: 275px;
@@ -540,61 +533,83 @@ footer .nav-links a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-  height: 40vh;
-  }
   #profile {
-  height: 83vh;
-  margin-bottom: 0;
-  margin-top: 0;
+    height: 83vh;
+    margin-bottom: 0;
+    margin-top: -1.75rem;
   }
-  article {
-  font-size: 1rem;
+
+  #about {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
+
+  #projects {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  #contact, footer {
+    height: 40vh;
+  }
+
+  .icon {
+    cursor: pointer;
+    height: 3rem;
+  }
+  .icon:hover {
+    transform: scale(1.25);
+    transition: transform 0.5s ease;
+  }
+
   footer nav {
-  height: fit-content;
-  margin-bottom: 2rem;
+    height: fit-content;
+    margin-bottom: 2rem;
   }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-  flex-wrap: wrap;
+  .about-containers, .contact-info-upper-container, .btn-container {
+    flex-wrap: wrap;
   }
-  .contact-info-container {
-  margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-  font-size: 1rem;
-  }
-  .experience-sub-title {
-  font-size: 1.25rem;
-  }
+
   .logo {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
   }
+
   .nav-links {
-  flex-direction: column;
-  gap: 0.5rem;
-  text-align: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
   }
-  .section__pic-container {
-    margin-bottom:-175px;
-    padding: 0;
-  }
+  
   .section__pic-container img{
-  width: auto;
-  height: 47.5vw;
-  justify-content: center;
+    width: 350px;
+    height: auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  .section__text {
+    margin-top: 9.5rem;
+  }
+  .section__text__p1 {
+    font-size: 1.5rem;
   }
   .section__text__p2 {
-  font-size: 1.25rem;
+    font-size: 1.5rem;
   }
+
   .title {
-  font-size: 2rem;
+    font-size: 2rem;
+    margin-top: -0.5rem;
   }
+
   .text-container {
-  text-align: justify;
+    text-align: justify;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .logos-slide img {
+    width: 40px;
+    height: 40px;
   }
 }
