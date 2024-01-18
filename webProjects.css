@@ -75,10 +75,10 @@ nav, .nav-links {
 }
 
 .amethyst:hover {
-    color: #a00070;
+    color: #c7008b;
 }
 .amethyst:hover::before, .amethyst:hover::after {
-    background-color: #a00070;
+    background-color: #c7008b;
 }
 
 a {
