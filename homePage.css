@@ -92,27 +92,6 @@ nav {
   font-size: 1.5rem;
 }
 
-.sapphire:hover {
-  color: #0508aa;
-}
-.sapphire:hover::before, .sapphire:hover::after {
-  background-color: #0508aa;
-}
-
-.ruby:hover {
-  color: #bb1425;
-}
-.ruby:hover::before, .ruby:hover::after {
-  background-color: #bb1425;
-}
-
-.emerald:hover {
-  color: #07a11c;
-}
-.emerald:hover::before, .emerald:hover::after {
-  background-color: #07a11c;
-}
-
 a {
   color: black;
   text-decoration: none;
@@ -142,7 +121,7 @@ a:hover::before, a:hover::after {
 
 .logo a {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: bold;
 }
 .logo a:hover {
   cursor: pointer;
@@ -155,6 +134,27 @@ a:hover::before, a:hover::after {
 }
 .logo:hover {
   transform: scale(1.1); 
+}
+
+.sapphire:hover {
+  color: #0508aa;
+}
+.sapphire:hover::before, .sapphire:hover::after {
+  background-color: #0508aa;
+}
+
+.ruby:hover {
+  color: #bb1425;
+}
+.ruby:hover::before, .ruby:hover::after {
+  background-color: #bb1425;
+}
+
+.emerald:hover {
+  color: #07a11c;
+}
+.emerald:hover::before, .emerald:hover::after {
+  background-color: #07a11c;
 }
 
 
@@ -531,6 +531,11 @@ footer .nav-links a:hover {
 }
 
 @media screen and (max-width: 600px) {
+  #hamburger-nav {
+    height: 10vh;
+    margin-bottom: 3.5vh;
+  }
+
   .section__text {
     margin-top: 9.5rem;
   }
@@ -564,8 +569,9 @@ footer .nav-links a:hover {
     height: auto;
   }
 
-  .btn-container {
-    flex-wrap: wrap;
+  .btn-color-2 {
+    color: white;
+    background-color: black;
   }
 
   #socials-container {
@@ -573,13 +579,11 @@ footer .nav-links a:hover {
   }
 
   .icon {
-    cursor: pointer;
     height: 3rem;
-    margin-top: 0;
+    margin-top: 0.5rem;
   }
   .icon:hover {
-    transform: scale(1.25);
-    transition: transform 0.5s ease;
+    transform: none;
   }
 
   #about {
@@ -620,6 +624,12 @@ footer .nav-links a:hover {
 
   #contact {
     height: 40vh;
+    color: black;
+  }
+  #contact p:hover a {
+    background: none;
+    color: inherit;
+    background-clip: initial;
   }
 
   .contact-info-upper-container {
