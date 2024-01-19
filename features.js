@@ -17,17 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const speakerButton = document.querySelector('.speaker');
     speakerButton.addEventListener('click', playPronunciation);
 
-    // Funtion to toggle the menu
-    function toggleMenu() {
-        const menu = document.querySelector(".menu-links");
-        const icon = document.querySelector(".hamburger-icon");
-        menu.classList.toggle("open");
-        icon.classList.toggle("open");
-    };
-
-    const hamburgerIcon = document.querySelector(".hamburger-icon");
-    hamburgerIcon.addEventListener('click', toggleMenu);
-
     // Function to scroll to the top of the page
     function scrollToTop() {
         window.scrollTo({
@@ -43,6 +32,18 @@ document.addEventListener('DOMContentLoaded', function () {
             scrollToTop();
         });
     }
+
+    // Funtion to close the menu after user clicks on a link
+    document.querySelectorAll('nav ul a').forEach(item => {
+        item.addEventListener('click', event => {
+            document.querySelector('#click').checked = false;
+        })
+    })
+
+    // Funtion to disable scroll when the menu is open
+    document.querySelector('#click').addEventListener('change', function () {
+        document.body.classList.toggle('no-scroll', this.checked);
+    });
 });
 
 

@@ -1,13 +1,20 @@
 /* GENERAL */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); */
 
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Pacifico', cursive;
+}
+body.no-scroll {
+  overflow: hidden;
 }
 
 html {
@@ -66,175 +73,54 @@ section {
 }
 
 
-/* DESKTOP NAV */
-#desktop-nav {
+/* NAVIGATION */
+nav{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 10vh;
-  margin: 0 7.5rem;
-}
-
-nav, .nav-links {
-  display: flex;
-  font-family: 'Pacifico', cursive;
-}
-
-nav {
-  justify-content: space-around;
-  align-items: center;
-  height: 15vh;
-}
-
-.nav-links {
-  gap: 2.5rem;
-  list-style: none;
-  font-size: 1.5rem;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-  position: relative;
-}
-a::before, a::after {
-  content: '';
-  position: absolute;
-  top: 105%;
-  bottom: 0;
-  width: 0;
-  height: 5px;
-  transition: width 0.25s ease;
-  border-radius: 50px;
-}
-a::before {
-  left: 50%;
-  transform: translateX(-50%);
-}
-a::after {
-  right: 50%;
-  transform: translateX(50%);
-}
-a:hover::before, a:hover::after {
+  height: 82.5px;
   width: 100%;
-}
-
-.logo a {
-  font-size: 2rem;
-  font-weight: bold;
-}
-.logo a:hover {
-  cursor: pointer;
-}
-.logo a:hover::before, .logo a:hover::after {
-  display: none;
-}
-.logo {
-  transition: transform 0.5s ease; 
-}
-.logo:hover {
-  transform: scale(1.1); 
-}
-
-.sapphire:hover {
-  color: #0508aa;
-}
-.sapphire:hover::before, .sapphire:hover::after {
-  background-color: #0508aa;
-}
-
-.ruby:hover {
-  color: #bb1425;
-}
-.ruby:hover::before, .ruby:hover::after {
-  background-color: #bb1425;
-}
-
-.emerald:hover {
-  color: #07a11c;
-}
-.emerald:hover::before, .emerald:hover::after {
-  background-color: #07a11c;
-}
-
-
-/* HAMBURGER MENU */
-#hamburger-nav {
-  display: none;
-}
-
-.hamburger-menu {
-  position: relative;
-  display: inline-block;
-}
-
-.hamburger-icon {
-  display: flex;
-  flex-direction: column;
+  background: white;
+  align-items: center;
   justify-content: space-between;
-  height: 24px;
-  width: 30px;
-  cursor: pointer;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
 }
 
-.hamburger-icon span {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  transition: all 0.3 ease-in-out;
+nav .logo{
+color: black;
+font-size: 35px;
+font-weight: 600;
 }
 
-.menu-links {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: white;
-  width: fit-content;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3 ease-in-out;
+nav ul{
+display: flex;
+flex-wrap: wrap;
+list-style: none;
 }
 
-.menu-links a {
-  display: block;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.5rem;
-  color: black;
-  text-decoration: none;
-  transition: all 0.3 ease-in-out;
+nav ul li{
+margin: 0 5px;
 }
 
-.menu-links li {
-  list-style: none;
+nav ul li a{
+color: black;
+text-decoration: none;
+font-size: 18px;
+font-weight: 500;
+padding: 8px 15px;
+border-radius: 5px;
+letter-spacing: 1px;
+transition: all 0.3s ease;
 }
 
-.menu-links.open {
-  max-height: 300px;
+nav .menu-btn i{
+color: #000000;
+font-size: 35px;
+cursor: pointer;
+display: none;
 }
 
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
-}
-
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
+input[type="checkbox"]{
+display: none;
 }
 
 
@@ -338,15 +224,6 @@ a:hover::before, a:hover::after {
   white-space:none;
 }
 
-/* @keyframes slide {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translate(-100%);
-  }
-} */
-
 
 /* EXPERIENCE SECTION */
 /* #experience {
@@ -438,6 +315,9 @@ a:hover::before, a:hover::after {
 .contact-info-container p {
   font-size: x-large;
 }
+.contact-info-container p a {
+  color: black;
+}
 
 .contact-icon {
   cursor: default;
@@ -451,19 +331,21 @@ a:hover::before, a:hover::after {
 
 
 /* FOOTER SECTION */
-footer .nav-links a {
-  display: inline-block;
-  transition: transform 0.75s ease;
-  font-size: larger;
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+  font-size: x-large;
+  color: black;
 }
-footer .nav-links a:hover {
-  transform: scaleX(-1);
+.nav-links a {
+  color: black;
 }
 
 .up-arrow {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: -1rem;
 }
 .up-arrow img {
@@ -490,9 +372,6 @@ footer .nav-links a:hover {
 }
   
 @media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
   #hamburger-nav {
     display: flex;
   }
@@ -531,9 +410,49 @@ footer .nav-links a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  #hamburger-nav {
-    height: 10vh;
-    margin-bottom: 3.5vh;
+  nav{
+    padding: 0 2.5rem;
+  }
+  nav .menu-btn i{
+    display: block;
+  }
+
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    backdrop-filter: blur(50px);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  nav ul li{
+    width: 100%;
+    margin-top: 125px;
+  }
+
+  nav ul li a{
+    color: black;
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 25px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  #click:checked ~ ul{
+    left: 0;
+  }
+
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  
+  #click:checked ~ ul li a{
+    margin-left: 0px;
   }
 
   .section__text {
@@ -551,11 +470,8 @@ footer .nav-links a:hover {
     margin-top: -0.5rem;
   }
 
-  .logo {
-    font-size: 2.5rem;
-  }
-  .logo:hover {
-    transform: none;
+  nav .logo {
+    font-size: 2rem;
   }
 
   #profile {
@@ -654,10 +570,6 @@ footer .nav-links a:hover {
 
   footer nav {
     margin-top: -2rem;
-  }
-
-  .nav-links {
-    flex-direction: row;
   }
 
   footer .nav-links a:hover {
