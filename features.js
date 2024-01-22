@@ -33,16 +33,31 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Funtion to close the menu after user clicks on a link
+    // Function to disable scrolling
+    function disableScroll() {
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Function to enable scrolling
+    function enableScroll() {
+        document.body.style.overflow = 'auto';
+    }
+
+    // Function to close the menu after user clicks on a link
     document.querySelectorAll('nav ul a').forEach(item => {
         item.addEventListener('click', event => {
             document.querySelector('#click').checked = false;
-        })
-    })
+            enableScroll(); // Enable scrolling when menu is closed
+        });
+    });
 
-    // Funtion to disable scroll when the menu is open
-    document.querySelector('#click').addEventListener('change', function () {
-        document.body.classList.toggle('no-scroll', this.checked);
+    // Assuming '#click' is the id of your menu checkbox
+    document.querySelector('#click').addEventListener('change', (event) => {
+        if (event.target.checked) {
+            disableScroll(); // Disable scrolling when menu is open
+        } else {
+            enableScroll(); // Enable scrolling when menu is closed
+        }
     });
 });
 
