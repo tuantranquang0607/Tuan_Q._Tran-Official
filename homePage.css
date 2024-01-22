@@ -13,9 +13,6 @@
 body {
   font-family: 'Pacifico', cursive;
 }
-body.no-scroll {
-  overflow: hidden;
-}
 
 html {
   scroll-behavior: smooth;
@@ -74,54 +71,69 @@ section {
 
 
 /* NAVIGATION */
-nav{
-  display: flex;
-  height: 82.5px;
-  width: 100%;
-  background: white;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 50px 0 100px;
-  flex-wrap: wrap;
-}
-
-nav .logo{
-  color: black;
+.logo {
   font-size: 35px;
   font-weight: 600;
 }
+.logo a {
+  color: black;
+}
+.logo {
+  transition: transform 0.5s ease; 
+}
+.logo:hover {
+  transform: scale(1.1); 
+}
 
+nav{
+  display: flex;
+  background: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7.5rem 0 7.5rem;
+  flex-wrap: wrap;
+}
 nav ul{
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
-
 nav ul li{
   margin: 0 5px;
 }
-
 nav ul li a{
   color: black;
   text-decoration: none;
   font-size: 25px;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
+  margin: 0 17.5px;
+  position: relative;
 }
-
 nav ul li a::before, nav ul li a::after {
   content: '';
   position: absolute;
-  top: 120%;
+  top: 105%;
   bottom: 0;
   width: 0;
   height: 5px;
-  background-color: black;
   transition: width 0.25s ease;
   border-radius: 50px;
+}
+nav ul li a::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav ul li a::after {
+  right: 50%;
+  transform: translateX(50%);
+}
+nav ul li a:hover::before, nav ul li a:hover::after {
+  width: 100%;
+}
+nav .menu-btn i{
+  color: #000000;
+  font-size: 35px;
+  cursor: pointer;
+  display: none;
 }
 
 .sapphire:hover {
@@ -143,14 +155,6 @@ nav ul li a::before, nav ul li a::after {
 }
 .emerald:hover::before, .emerald:hover::after {
   background-color: #07a11c;
-}
-
-
-nav .menu-btn i{
-  color: #000000;
-  font-size: 35px;
-  cursor: pointer;
-  display: none;
 }
 
 input[type="checkbox"]{
@@ -365,6 +369,15 @@ input[type="checkbox"]{
 
 
 /* FOOTER SECTION */
+footer .nav-links a {
+  display: inline-block;
+  transition: transform 0.75s ease;
+  font-size: larger;
+}
+footer .nav-links a:hover {
+  transform: scaleX(-1);
+}
+
 .nav-links {
   display: flex;
   flex-direction: row;
@@ -372,6 +385,8 @@ input[type="checkbox"]{
   gap: 5rem;
   font-size: x-large;
   color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .nav-links a {
   color: black;
@@ -380,7 +395,6 @@ input[type="checkbox"]{
 .up-arrow {
   display: flex;
   justify-content: center;
-  margin-bottom: -1rem;
 }
 .up-arrow img {
   height: 3rem;
@@ -446,6 +460,7 @@ input[type="checkbox"]{
 @media screen and (max-width: 600px) {
   nav{
     padding: 0 2.5rem;
+    padding-bottom: 10px;
   }
   nav .menu-btn i{
     display: block;
@@ -453,7 +468,7 @@ input[type="checkbox"]{
 
   nav ul{
     position: fixed;
-    top: 80px;
+    top: 67.5px;
     left: -100%;
     backdrop-filter: blur(50px);
     height: 100%;
@@ -475,6 +490,10 @@ input[type="checkbox"]{
     display: block;
     font-size: 25px;
     transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .menu-btn {
+    margin-top: 7.5px;
   }
 
   #click:checked ~ ul{
