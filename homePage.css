@@ -86,41 +86,75 @@ nav{
 }
 
 nav .logo{
-color: black;
-font-size: 35px;
-font-weight: 600;
+  color: black;
+  font-size: 35px;
+  font-weight: 600;
 }
 
 nav ul{
-display: flex;
-flex-wrap: wrap;
-list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 nav ul li{
-margin: 0 5px;
+  margin: 0 5px;
 }
 
 nav ul li a{
-color: black;
-text-decoration: none;
-font-size: 18px;
-font-weight: 500;
-padding: 8px 15px;
-border-radius: 5px;
-letter-spacing: 1px;
-transition: all 0.3s ease;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
 }
 
+nav ul li a::before, nav ul li a::after {
+  content: '';
+  position: absolute;
+  top: 120%;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background-color: black;
+  transition: width 0.25s ease;
+  border-radius: 50px;
+}
+
+.sapphire:hover {
+  color: #0508aa;
+}
+.sapphire:hover::before, .sapphire:hover::after {
+  background-color: #0508aa;
+}
+
+.ruby:hover {
+  color: #bb1425;
+}
+.ruby:hover::before, .ruby:hover::after {
+  background-color: #bb1425;
+}
+
+.emerald:hover {
+  color: #07a11c;
+}
+.emerald:hover::before, .emerald:hover::after {
+  background-color: #07a11c;
+}
+
+
 nav .menu-btn i{
-color: #000000;
-font-size: 35px;
-cursor: pointer;
-display: none;
+  color: #000000;
+  font-size: 35px;
+  cursor: pointer;
+  display: none;
 }
 
 input[type="checkbox"]{
-display: none;
+  display: none;
 }
 
 
