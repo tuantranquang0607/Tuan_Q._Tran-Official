@@ -4,44 +4,31 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Webs Projects</title>
-        <link rel="stylesheet" href="./webProjects.css">
-        <script src="./features.js" defer></script>
+        <title>Web Projects</title>
+        <link rel="stylesheet" href="webProjects.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <script src="features.js" defer></script>
     </head>
 
     <body>
         <!-- Menu -->
-        <nav id="desktop-nav">
-            <div class="logo"><a href="./homePage.html">Q. Tuấn Trần</a></div>
-    
-            <div>
-                <ul class="nav-links">
-                    <li><a class="sapphire" href="./gameProjects.html">Game Projects</a></li>
-                    <li><a class="amethyst" href="./uiProjects.html">UI Projects</a></li>
-                    <li><a class="ruby" href="./artWorks.html">Artworks</a></li>
-                    <li><a class="emerald" href="./homePage.html#contact">Contact</a></li>
-                </ul>
-            </div>
+        <nav>
+            <div class="logo"><a href="homePage.html">Q. Tuấn Trần</a></div>
+  
+            <input type="checkbox" id="click">
+            
+            <label for="click" class="menu-btn">
+              <i class="fas fa-bars"></i>
+            </label>
+  
+            <ul>
+                <li><a class="sapphire" href="gameProjects.html">Game Projects</a></li>
+                <li><a class="ruby" href="uiProjects.html">UI Projects</a></li>
+                <li><a class="emerald" href="artWorks.html">Artworks</a></li>
+                <li><a class="amethyst" href="homePage.html#contact">Contact</a></li>
+            </ul>
         </nav>
-    
-        <nav id="hamburger-nav">
-            <div class="logo"><a href="./homePage.html">Q. Tuấn Trần</a></div>
-    
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-        
-                <div class="menu-links">
-                    <li><a href="./gameProjects.html" onclick="toggleMenu()">Game Projects</a></li>
-                    <li><a href="./uiProjects.html" onclick="toggleMenu()">UI Projects</a></li>
-                    <li><a href="./artWorks.html" onclick="toggleMenu()">Artworks</a></li>
-                    <li><a href="./homePage.html#contact" onclick="toggleMenu()">Contact</a></li>
-                </div>
-            </div>
-        </nav>
+
 
         <!-- Content -->
         <section class="project-grid">
@@ -87,30 +74,19 @@
             </article>
         </section>
 
+
         <!-- Footer -->
         <footer>
-            <!-- <a class="up-arrow"><img src="../assets/up-arrow.jpg"></a> -->
+            <a class="up-arrow"><img src="../assets/up-arrow.jpg"></a>
     
-            <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
-                    <li><a class="sapphire" href="../inside/gameProjects.html">Game Projects</a></li>
-                    <li><a class="amethyst" href="../inside/uiProjects.html">UI Projects</a></li>
-                    <li><a class="ruby" href="../inside/artWorks.html">Artworks</a></li>
-                    <li><a class="emerald" href="../inside/homePage.html#contact">Contact</a></li>
+                    <li><a href="gameProjects.html">Game Projects</a></li>
+                    <li><a href="inside/uiProjects.html">UI Projects</a></li>
+                    <li><a href="inside/artWorks.html">Artworks</a></li>
+                    <li><a href="homePage.html#contact">Contact</a></li>
                 </ul>
             </div>
-            </nav>
         </footer>
     </body>
-
-    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-    <script>
-        kofiWidgetOverlay.draw('tuantran6703', {
-            'type': 'floating-chat',
-            'floating-chat.donateButton.text': 'Support me',
-            'floating-chat.donateButton.background-color': '#323842',
-            'floating-chat.donateButton.text-color': '#fff'
-        });
-    </script>
 </html>

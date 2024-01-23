@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Responsive Navbar</title>
+        <title>Home Page</title>
         <link rel="stylesheet" href="homePage.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
         <script src="features.js" defer></script>
@@ -13,7 +13,7 @@
 
     <body>
         <nav>
-          <div class="logo"><a href="./homePage.html">Q. Tuấn Trần</a></div>
+          <div class="logo"><a href="homePage.html">Q. Tuấn Trần</a></div>
 
           <input type="checkbox" id="click">
           
@@ -28,7 +28,7 @@
           </ul>
         </nav>
 
-        <!-- Home Section -->
+        <!-- Profile Section -->
         <section id="profile">
           <div class="section__pic-container">
             <img src="../assets/right-face-selfie.jpg"/>
@@ -41,12 +41,10 @@
             <p class="section__text__p2">who's trying to be<br> <span class="text"></span></p>
             
             <div class="btn-container">
-              <button
-                class="btn btn-color-2"
-                onclick="window.open('../assets/Q. Tuan Tran - Resume.pdf')"
-              >
+              <button class="btn btn-color-2" onclick="window.open('../assets/Q. Tuan Tran - Resume.pdf')">
                 Download CV
               </button>
+
               <button class="btn btn-color-1" onclick="location.href='#contact'">
                 Contact Info
               </button>
@@ -55,37 +53,31 @@
             <div id="socials-container">
               <img
                 src="../assets/linkedin.png"
-                alt="My LinkedIn profile"
                 class="icon"
                 onclick="location.href='https://linkedin.com/'"
               />
               <img
                 src="../assets/email.png"
-                alt="Email icon"
                 class="icon"
                 onclick="location.href='mailto:tuan.tran6703@gmail.com'"
                 />
               <img
                 src="../assets/github.png"
-                alt="My Github profile"
                 class="icon"
                 onclick="location.href='https://github.com/'"
               />
               <img
                 src="../assets/facebook.png"
-                alt="My Github profile"
                 class="icon"
                 onclick="location.href='https://www.facebook.com/profile.php?id=100030823129717'"
               />
               <img
                 src="../assets/instagram.png"
-                alt="My Github profile"
                 class="icon"
                 onclick="location.href='https://www.instagram.com/mr.moony__/'"
               />
               <img
                 src="../assets/steam.png"
-                alt="My Github profile"
                 class="icon"
                 onclick="location.href='https://steamcommunity.com/profiles/76561199139404335/'"
               />
@@ -218,13 +210,13 @@
             </div>
 
             <div class="contact-info-container">
-              <img src="../assets/facebook.png" class="contact-icon"/>
-              <p><a href="https://www.facebook.com/profile.php?id=100030823129717">https://www.facebook.com/profile.php?id=100030823129717</a></p>
+              <img src="../assets/ko-fi.png" class="contact-icon"/>
+              <p><a href="https://ko-fi.com/tuantran6703">https://ko-fi.com/tuantran6703</a></p>
             </div>
 
             <div class="contact-info-container">
-              <img src="../assets/instagram.png" class="contact-icon"/>
-              <p><a href="https://www.instagram.com/mr.moony__/">https://www.instagram.com/mr.moony__/</a></p>
+              <img src="../assets/facebook.png" class="contact-icon"/>
+              <p><a href="https://www.facebook.com/profile.php?id=100030823129717">https://www.facebook.com/profile.php?id=100030823129717</a></p>
             </div>
 
             <div class="contact-info-container">
@@ -247,15 +239,5 @@
           </div>
         </footer>
       </body>
-
-      <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-      <script>
-        kofiWidgetOverlay.draw('tuantran6703', {
-          'type': 'floating-chat',
-          'floating-chat.donateButton.text': 'Support me',
-          'floating-chat.donateButton.background-color': '#323842',
-          'floating-chat.donateButton.text-color': '#fff'
-        });
-      </script>
     </body>
 </html>
