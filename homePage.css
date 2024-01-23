@@ -22,7 +22,7 @@ html {
 /* SECTIONS */
 section {
   padding-top: 4vh;
-  height: 96vh;
+  /* height: 96vh; */
   margin: 0 7.5rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -74,12 +74,10 @@ section {
 .logo {
   font-size: 35px;
   font-weight: 600;
+  transition: transform 0.5s ease; 
 }
 .logo a {
   color: black;
-}
-.logo {
-  transition: transform 0.5s ease; 
 }
 .logo:hover {
   transform: scale(1.1); 
@@ -169,14 +167,9 @@ input[type="checkbox"]{
   gap: 5rem;
 }
 
-.icon {
-  cursor: pointer;
-  height: 3.5rem;
-  margin-top: 1.5rem;
-}
-.icon:hover {
-  transform: scale(1.25);
-  transition: transform 0.75s ease;
+.title {
+  font-size: 3rem;
+  text-align: center;
 }
 
 .speaker {
@@ -206,13 +199,8 @@ input[type="checkbox"]{
 }
 .section__text__p2 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-size: xx-large;
-}
-
-.title {
-  font-size: 3rem;
-  text-align: center;
 }
 
 #socials-container {
@@ -221,11 +209,20 @@ input[type="checkbox"]{
   gap: 1rem;
 }
 
+.icon {
+  cursor: pointer;
+  height: 3.5rem;
+  margin-top: 1.5rem;
+}
+.icon:hover {
+  transform: scale(1.25);
+  transition: transform 0.75s ease;
+}
+
 
 /* ABOUT SECTION */
 #about {
   position: relative;
-  overflow: hidden;
   margin-bottom: 2.5rem;
 }
 
@@ -319,7 +316,7 @@ input[type="checkbox"]{
 }
 
 
-/* CONTACT */
+/* CONTACT SECTION */
 #contact {
   display: flex;
   justify-content: center;
@@ -336,7 +333,7 @@ input[type="checkbox"]{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 2rem;
+  border-radius: 15px;
   border: black 0.1rem solid;
   margin: 1rem auto;
   padding: 0.25rem;
@@ -371,11 +368,11 @@ input[type="checkbox"]{
 /* FOOTER SECTION */
 footer .nav-links a {
   display: inline-block;
-  transition: transform 0.75s ease;
-  font-size: larger;
+  transition: transform 0.25s ease;
+  font-size: x-large;
 }
 footer .nav-links a:hover {
-  transform: scaleX(-1);
+  transform: scale(1.1);
 }
 
 .nav-links {
@@ -399,8 +396,6 @@ footer .nav-links a:hover {
 .up-arrow img {
   height: 3rem;
   width: 3rem;
-  max-width: 100%;
-  height: auto;
   cursor: pointer;
 }
 
@@ -416,6 +411,10 @@ footer .nav-links a:hover {
   }
   #contact, #projects {
     height: fit-content;
+  }
+
+  body script {
+    display: none;
   }
 }
   
@@ -457,11 +456,21 @@ footer .nav-links a:hover {
   }
 }
 
+/* MOBILE  */
 @media screen and (max-width: 600px) {
-  nav{
-    padding: 0 2.5rem;
+  /* NAVIGATION */
+  .logo {
+    font-size: 2rem;
+  }
+  .logo:hover {
+    transform: none;
+  }
+
+  nav {
+    padding: 0 1.5rem;
     padding-bottom: 10px;
   }
+
   nav .menu-btn i{
     display: block;
   }
@@ -477,12 +486,10 @@ footer .nav-links a:hover {
     display: block;
     transition: all 0.3s ease;
   }
-
   nav ul li{
     width: 100%;
     margin-top: 125px;
   }
-
   nav ul li a{
     color: black;
     width: 100%;
@@ -499,43 +506,40 @@ footer .nav-links a:hover {
   #click:checked ~ ul{
     left: 0;
   }
-
-  #click:checked ~ .menu-btn i:before{
-    content: "\f00d";
-  }
-  
   #click:checked ~ ul li a{
     margin-left: 0px;
   }
 
-  .section__text {
-    margin-top: 9.5rem;
-  }
-  .section__text__p1 {
-    font-size: 1.5rem;
-  }
-  .section__text__p2 {
-    font-size: 1.5rem;
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
   }
 
-  .title {
-    font-size: 2rem;
-    margin-top: -0.5rem;
-  }
 
-  nav .logo {
-    font-size: 2rem;
-  }
-
+  /* PROFILE SECTION */
   #profile {
-    height: 83vh;
-    margin-bottom: 0;
+    margin-bottom: 6.5rem;
     margin-top: -1.75rem;
   }
 
   .section__pic-container img{
-    width: 350px;
+    width: 300px;
     height: auto;
+  }
+
+  #profile .title {
+    font-size: 3.5rem;
+    margin-top: -0.5rem;
+  }
+
+  .section__text {
+    margin-top: 9rem;
+  }
+  .section__text__p1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .section__text__p2 {
+    font-size: 1.75rem;
   }
 
   .btn-color-2 {
@@ -555,9 +559,17 @@ footer .nav-links a:hover {
     transform: none;
   }
 
+
+  /* ABOUT SECTION */
   #about {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    padding-top: 0.5rem;
+  }
+  #about .section__text__p1 {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  #about .title {
+    font-size: 2rem;
   }
 
   .text-container {
@@ -566,14 +578,28 @@ footer .nav-links a:hover {
     font-size: 16.5px;
   }
 
+  .logos {
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+  }
   .logos-slide img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     filter: grayscale(100%)
   }
 
+
+  /* PROJECT SECTION */
   #projects {
-    margin-bottom: 12rem;
+    margin-bottom: 9.5rem;
+    padding-top: 0;
+  }
+  #projects .section__text__p1 {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  #projects .title {
+    font-size: 2rem;
   }
 
   .experience-details-container {
@@ -588,9 +614,10 @@ footer .nav-links a:hover {
 
   .project-card img {
     width: 175px;
-    height: 275px;
+    height: 250px;
   }
 
+  /* CONTACT SECTION */
   #contact {
     height: 40vh;
     color: black;
@@ -600,24 +627,33 @@ footer .nav-links a:hover {
     color: inherit;
     background-clip: initial;
   }
+  #contact .section__text__p1 {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  #contact .title {
+    font-size: 2rem;
+  }
 
   .contact-info-upper-container {
     flex-wrap: wrap;
+    margin: 0;
   }
 
   .contact-info-container {
     margin: 0;
-    padding: 5px;
+    padding: 0.25rem;
     text-align: center;
   }
 
+
+  /* FOOTER SECTION */
   footer {
     margin-top: 10rem;
-    margin-bottom: 2rem;
   }
 
   .up-arrow {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     margin-top: 0;
   }
 
@@ -628,4 +664,89 @@ footer .nav-links a:hover {
   footer .nav-links a:hover {
     transform: none;
   }
+
+  .nav-links {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    gap: 2.5rem;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  /* PROFILE SECTION */
+  .section__pic-container img{
+    width: 275px;
+  }
+
+  #profile .title {
+    font-size: 3rem;
+  }
+
+  .section__text__p1 {
+    font-size: 1.5rem;
+  }
+  .section__text__p2 {
+    font-size: 1.5rem;
+  }
+
+  #socials-container {
+    margin-top: 0.75rem;
+  }
+
+  .icon {
+    height: 2.75rem;
+  }
+
+
+  /* ABOUT SECTION */
+  #about .section__text__p1 {
+    font-size: 1rem;
+  }
+  #about .title {
+    font-size: 1.75rem;
+  }
+
+  .text-container {
+    font-size: 15px;
+  }
+
+  .logos-slide img {
+    width: 25px;
+    height: 25px;
+  }
+
+
+  /* PROJECT SECTION  */
+  .project-card img {
+    width: 150px;
+    height: 225px;
+  }
+  .project-grid h2 {
+    font-size: 1.25rem;
+  }
+
+
+  /* CONTACT SECTION */
+  #about .section__text__p1 {
+    font-size: 1rem;
+  }
+  #contact .title {
+    font-size: 1.75rem;
+  }
+
+  .contact-info-upper-container {
+    flex-wrap: nowrap;
+  }
+
+  .contact-info-container {
+    padding: 0.1rem;
+  }
+  .contact-info-container p {
+    font-size: x-large;
+  }
+
+  .contact-icon {
+    height: 1.75rem;
+    width: 1.75rem;
+  } 
 }
