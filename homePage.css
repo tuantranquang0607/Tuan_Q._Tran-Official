@@ -614,7 +614,7 @@ footer .nav-links a:hover {
   /* PROJECT SECTION */
   #projects {
     margin-bottom: 10rem;
-    padding-top: 0;
+    padding-top: 0.5rem;
   }
   #projects .section__text__p1 {
     font-size: 1.25rem;
@@ -695,6 +695,7 @@ footer .nav-links a:hover {
 
   .nav-links {
     margin-top: 0;
+    margin-bottom: 0.5rem;
     gap: 2.5rem;
   }
   .nav-links li a {
@@ -702,5 +703,96 @@ footer .nav-links a:hover {
   }
 }
 
-/* OPTIMIZATION FOR iPHONE 11/12/13/14/15 */
+/* OPTIMIZATION FOR SMALLER PHONES */
+@media screen and (max-width: 400px) {
+  /* NAVIGATION */
+  nav ul li{
+    margin-top: 100px;
+  }
+  nav ul li a{
+    font-size: 35px;
+  }
+
+  /* PROFILE SECTION */
+  #profile {
+    margin-top: -1rem;
+  }
+
+  .section__pic-container img{
+    width: 275px;
+  }
+
+  #profile .section__text__p1 {
+    font-size: 1.5rem;
+  }
+
+  #profile .title {
+    font-size: 3rem;
+  }
+
+  #profile .section__text__p2 {
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    height: 2.5rem;
+  }
+
+
+  /* ABOUT SECTION */
+  #about {
+    padding-top: 0.25rem;
+  }
+
+  .text-container {
+    font-size: 15px;
+  }
+
+  .logos-slide img {
+    width: 27.5px;
+    height: 27.5px;
+  }
+
+
+  /* PROJECT SECTION */
+  #projects {
+    padding-top: 0.25rem;
+  }
+
+  .project-card {
+    padding-bottom: 2.5rem;
+  }
+
+  .project-card h2 {
+    font-size: 1.25rem;
+  }
+
+  .project-card img {
+    width: 150px;
+    height: 200px;
+  }
+
+
+  /* CONTACT SECTION */
+  .contact-info-upper-container {
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-wrap: nowrap;
+  }
+
+  .contact-info-container p {
+    margin-bottom: 0;
+  }
+
+
+  /* FOOTER SECTION */
+  .up-arrow {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .nav-links li a {
+    font-size: 1.75rem;
+  }
+}
 
