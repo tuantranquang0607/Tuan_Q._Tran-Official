@@ -1,6 +1,5 @@
 /* GENERAL */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); */
 
 * {
   margin: 0;
@@ -65,9 +64,6 @@ section {
 .btn-color-2:hover {
   border: rgb(255, 255, 255) 0rem solid;
 }
-.btn-container {
-  gap: 1rem;
-}
 
 
 /* NAVIGATION */
@@ -129,8 +125,7 @@ nav ul li a:hover::before, nav ul li a:hover::after {
 }
 nav .menu-btn i{
   color: #000000;
-  font-size: 35px;
-  cursor: pointer;
+  font-size: 45px;
   display: none;
 }
 
@@ -456,8 +451,8 @@ footer .nav-links a:hover {
   }
 }
 
-/* MOBILE  */
-@media screen and (max-width: 600px) {
+/* MOBILE SCREENS *********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@media screen and (max-width: 500px) {
   /* NAVIGATION */
   .logo {
     font-size: 2rem;
@@ -473,6 +468,8 @@ footer .nav-links a:hover {
 
   nav .menu-btn i{
     display: block;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
   nav ul{
@@ -493,10 +490,35 @@ footer .nav-links a:hover {
   nav ul li a{
     color: black;
     width: 100%;
-    margin-left: -100%;
     display: block;
-    font-size: 25px;
+    font-size: 50px;
     transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  nav ul li a::before, nav ul li a::after {
+    transition: none;
+  }
+  nav ul li a::before {
+    left: 0;
+    transform: none;
+  }
+  nav ul li a::after {
+    right: 0;
+    transform: none;
+  }
+  nav ul li a:hover::before, nav ul li a:hover::after {
+    width: 0;
+  }
+  
+  .sapphire:hover {
+    color: black;
+  }
+  
+  .ruby:hover {
+    color: black;
+  }
+  
+  .emerald:hover {
+    color: black;
   }
 
   .menu-btn {
@@ -517,29 +539,28 @@ footer .nav-links a:hover {
 
   /* PROFILE SECTION */
   #profile {
-    margin-bottom: 6.5rem;
-    margin-top: -1.75rem;
+    margin-bottom: 8.75rem;
+    margin-top: -1.5rem;
   }
 
   .section__pic-container img{
-    width: 300px;
+    width: 350px;
     height: auto;
   }
 
   #profile .title {
     font-size: 3.5rem;
-    margin-top: -0.5rem;
   }
 
   .section__text {
     margin-top: 9rem;
   }
   .section__text__p1 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
   }
   .section__text__p2 {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 
   .btn-color-2 {
@@ -548,7 +569,7 @@ footer .nav-links a:hover {
   }
 
   #socials-container {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 
   .icon {
@@ -563,6 +584,7 @@ footer .nav-links a:hover {
   /* ABOUT SECTION */
   #about {
     padding-top: 0.5rem;
+    margin-bottom: 5rem;
   }
   #about .section__text__p1 {
     font-size: 1.25rem;
@@ -575,7 +597,7 @@ footer .nav-links a:hover {
   .text-container {
     text-align: justify;
     text-align: center;
-    font-size: 16.5px;
+    font-size: 17.5px;
   }
 
   .logos {
@@ -583,15 +605,15 @@ footer .nav-links a:hover {
     margin-bottom: -0.5rem;
   }
   .logos-slide img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     filter: grayscale(100%)
   }
 
 
   /* PROJECT SECTION */
   #projects {
-    margin-bottom: 9.5rem;
+    margin-bottom: 10rem;
     padding-top: 0;
   }
   #projects .section__text__p1 {
@@ -612,9 +634,13 @@ footer .nav-links a:hover {
     gap: 0;
   }
 
+  .project-card {
+    padding-bottom: 2.5rem;
+  }
+
   .project-card img {
     width: 175px;
-    height: 250px;
+    height: 275px;
   }
 
   /* CONTACT SECTION */
@@ -638,6 +664,8 @@ footer .nav-links a:hover {
   .contact-info-upper-container {
     flex-wrap: wrap;
     margin: 0;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .contact-info-container {
@@ -653,8 +681,8 @@ footer .nav-links a:hover {
   }
 
   .up-arrow {
-    margin-bottom: 0.5rem;
-    margin-top: 0;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
   }
 
   footer nav {
@@ -666,87 +694,13 @@ footer .nav-links a:hover {
   }
 
   .nav-links {
-    margin-bottom: 0.5rem;
     margin-top: 0;
     gap: 2.5rem;
   }
+  .nav-links li a {
+    font-size: 2rem;
+  }
 }
 
-@media screen and (max-height: 700px) {
-  /* PROFILE SECTION */
-  .section__pic-container img{
-    width: 275px;
-  }
+/* OPTIMIZATION FOR iPHONE 11/12/13/14/15 */
 
-  #profile .title {
-    font-size: 3rem;
-  }
-
-  .section__text__p1 {
-    font-size: 1.5rem;
-  }
-  .section__text__p2 {
-    font-size: 1.5rem;
-  }
-
-  #socials-container {
-    margin-top: 0.75rem;
-  }
-
-  .icon {
-    height: 2.75rem;
-  }
-
-
-  /* ABOUT SECTION */
-  #about .section__text__p1 {
-    font-size: 1rem;
-  }
-  #about .title {
-    font-size: 1.75rem;
-  }
-
-  .text-container {
-    font-size: 15px;
-  }
-
-  .logos-slide img {
-    width: 25px;
-    height: 25px;
-  }
-
-
-  /* PROJECT SECTION  */
-  .project-card img {
-    width: 150px;
-    height: 225px;
-  }
-  .project-grid h2 {
-    font-size: 1.25rem;
-  }
-
-
-  /* CONTACT SECTION */
-  #about .section__text__p1 {
-    font-size: 1rem;
-  }
-  #contact .title {
-    font-size: 1.75rem;
-  }
-
-  .contact-info-upper-container {
-    flex-wrap: nowrap;
-  }
-
-  .contact-info-container {
-    padding: 0.1rem;
-  }
-  .contact-info-container p {
-    font-size: x-large;
-  }
-
-  .contact-icon {
-    height: 1.75rem;
-    width: 1.75rem;
-  } 
-}
