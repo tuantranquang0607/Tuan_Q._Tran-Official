@@ -1,4 +1,5 @@
-/* GENERAL */
+/* GENERAL ************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 * {
@@ -17,7 +18,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /* SECTIONS */
 section {
   padding-top: 4vh;
@@ -30,41 +30,6 @@ section {
 .section-container {
   display: flex;
 }
-
-
-/* BUTTONS */
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-.btn {
-  font-weight: 600;
-  transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
-}
-.btn-color-1, .btn-color-2 {
-  border: rgb(0, 0, 0) 0.1rem solid;
-}
-.btn-color-1:hover, .btn-color-2:hover {
-  cursor: pointer;
-}
-.btn-color-1, .btn-color-2:hover {
-  background: rgb(0, 0, 0);
-  color: white;
-}
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
-}
-.btn-color-2 {
-  background: none;
-}
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0rem solid;
-}
-
 
 /* NAVIGATION */
 .logo {
@@ -123,6 +88,7 @@ nav ul li a::after {
 nav ul li a:hover::before, nav ul li a:hover::after {
   width: 100%;
 }
+
 nav .menu-btn i{
   color: #000000;
   font-size: 45px;
@@ -153,7 +119,6 @@ nav .menu-btn i{
 input[type="checkbox"]{
   display: none;
 }
-
 
 /* PROFILE SECTION */
 #profile {
@@ -197,6 +162,38 @@ input[type="checkbox"]{
   font-size: xx-large;
 }
 
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+.btn-color-1, .btn-color-2 {
+  border: rgb(0, 0, 0) 0.1rem solid;
+}
+.btn-color-1:hover, .btn-color-2:hover {
+  cursor: pointer;
+}
+.btn-color-1, .btn-color-2:hover {
+  background: rgb(0, 0, 0);
+  color: white;
+}
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+.btn-color-2 {
+  background: none;
+}
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0rem solid;
+}
+
 #socials-container {
   display: flex;
   justify-content: center;
@@ -212,7 +209,6 @@ input[type="checkbox"]{
   transform: scale(1.25);
   transition: transform 0.75s ease;
 }
-
 
 /* ABOUT SECTION */
 #about {
@@ -248,12 +244,10 @@ input[type="checkbox"]{
   white-space:none;
 }
 
-
 /* EXPERIENCE SECTION */
 /* #experience {
   position: relative;
 }
-
 
 /* PROJECTS SECTION */
 #projects {
@@ -303,7 +297,6 @@ input[type="checkbox"]{
   text-align: center;
 }
 
-
 /* CONTACT SECTION */
 #contact {
   display: flex;
@@ -352,7 +345,6 @@ input[type="checkbox"]{
   transform: none;
 }
 
-
 /* FOOTER SECTION */
 footer .nav-links a {
   display: inline-block;
@@ -388,14 +380,14 @@ footer .nav-links a:hover {
 }
 
 
-/* RESPONSIVE DESIGN ************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* RESPONSIVENESS DESIGN ************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 
 /* OPTIMAZION FOR BIG SCREENS */
 
-@media screen and (max-width: 2500px) {
+@media screen and (max-width: 2600px) {
   /* PROFILE SECTION */
   #profile {
-    margin-top: -2.5rem;
+    margin-top: -3.5rem;
   }
 
   .section__pic-container img{
@@ -418,7 +410,6 @@ footer .nav-links a:hover {
     height: 4rem;
   }
 
-
   /* ABOUT SECTION */
   .logos-slide img {
     height: 75px;
@@ -429,13 +420,11 @@ footer .nav-links a:hover {
     font-size: 2.25rem;
   }
 
-
   /* PROJECTS SECTION */
   .project-grid {
     grid-template-columns: repeat(4, 1fr);
     padding: 0 5rem;
     gap: 0;
-    
   }
 
   .project-card img {
@@ -446,7 +435,6 @@ footer .nav-links a:hover {
     font-size: 2.5rem;
   }
 
-
   /* CONTACT SECTION */
   #contact {
     padding-top: 0;
@@ -455,7 +443,6 @@ footer .nav-links a:hover {
   .contact-info-container p {
     font-size: 2.5rem;
   }
-
 
   /* FOOTER SECTION */
   .up-arrow {
@@ -476,7 +463,9 @@ footer .nav-links a:hover {
   }
 }
 
+
 /* OPTIMAZION FOR NORMAL SCREENS */
+
 @media screen and (max-width: 2000px) {
   /* PROFILE SECTION */
   .section__pic-container img{
@@ -498,7 +487,6 @@ footer .nav-links a:hover {
     height: 3rem;
   }
 
-
   /* ABOUT SECTION */
   .logos-slide img {
     height: 50px;
@@ -508,7 +496,6 @@ footer .nav-links a:hover {
   .text-container {
     font-size: 1.5rem;
   }
-
 
   /* PROJECTS SECTION */
   .project-grid {
@@ -524,12 +511,10 @@ footer .nav-links a:hover {
     font-size: 2rem;
   }
 
-
   /* CONTACT SECTION */
   .contact-info-container p {
     font-size: 2rem;
   }
-
 
   /* FOOTER SECTION */
   .up-arrow {
@@ -547,73 +532,117 @@ footer .nav-links a:hover {
 }
 
 
+/* OPTIMAZION FOR LANDSCAPE MODE TABLET SCREENS */
 
-/* OPTIMAZION FOR TABLET SCREENS */
+@media screen and (max-width: 1400px) and (max-height: 1050px) {
+  /* NAVIGATION */
+  /* .logo {
+    font-size: 40px;
+  }
+  .logo:hover {
+    transform: none; 
+  }
 
-/* @media screen and (max-width: 1400px) and (min-width: 1024px) {
-  PROFILE SECTION
-  #profile {
+  nav ul li a{
+    font-size: 32.5px;
+  }
+  nav ul li a::before {
+    left: 0;
+    transform: none;
+  }
+  nav ul li a::after {
+    right: 0;
+    transform: none;
+  }
+  nav ul li a:hover::before, nav ul li a:hover::after {
+    width: 0;
+  }
+
+  .sapphire:hover {
+    color: black;
+  }
+  .sapphire:hover::before, .sapphire:hover::after {
+    background-color: black;
+  }
+
+  .ruby:hover {
+    color: black;
+  }
+  .ruby:hover::before, .ruby:hover::after {
+    background-color: black;
+  }
+
+  .emerald:hover {
+    color: black;
+  }
+  .emerald:hover::before, .emerald:hover::after {
+    background-color: black;
+  } */
+
+  /* PROFILE SECTION */
+  /* #profile {
     flex-direction: row;
+    margin-top: -3.5rem;
   }
 
   .section__pic-container img{
-    width: 300px;
+    width: 500px;
   }
 
   #profile .title {
-    font-size: 3.75rem;
+    font-size: 4rem;
   }
 
   .section__text__p1 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
   .section__text__p2 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
 
   .icon {
-    height: 3rem;
+    height: 3.5rem;
   }
+  .icon:hover {
+    transform: none;
+  } */
 
-  ABOUT SECTION
-  .logos-slide img {
+  /* ABOUT SECTION */
+  /* .logos-slide img {
     height: 60px;
-    margin: 0 2rem 0 0;
+    margin: 0 2.5rem 0 0;
   }
 
   .text-container {
     font-size: 2rem;
-  }
+  } */
 
-  PROJECTS SECTION
-  .project-grid {
+  /* PROJECTS SECTION */
+  /* .project-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
   }
 
   .project-card img {
-    width: 375px;
-    height: 450px;
+    width: 500px;
+    height: 325px;
   }
-  .project-card h2 {
-    font-size: 2rem;
-  }
+  .project-card img:hover {
+    filter: grayscale(100%);
+  } */
 
-  CONTACT SECTION
-  .contact-info-upper-container {
+  /* CONTACT SECTION */
+  /* .contact-info-upper-container {
     flex-wrap: wrap;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
   }
 
   .contact-info-container p {
-    font-size: 3rem;
-    word-break: break-all;
+    font-size: 2.5rem;
+    word-break: break-word;
     text-align: center;
-  }
+  } */
 
-  FOOTER SECTION
-  .up-arrow {
+  /* FOOTER SECTION */
+  /* .up-arrow {
     margin-bottom: 3rem;
     margin-top: 3rem;
   }
@@ -624,8 +653,8 @@ footer .nav-links a:hover {
 
   footer .nav-links a {
     font-size: 3rem;
-  }
-} */
+  } */
+}
 
 
 /* OPTIMIZATION FOR MOBILE SCREENS */
