@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 99;
+}
+
+.nav__content {
+    max-width: 90%;
+    margin: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav .checkbox {
+    display: none;
+}
+nav .checkbox i {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+nav input {
+    display: none;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    color: white;
+    border: white solid 2px;
+    border-radius: 15px;
+}
+
+
+/* SECTIONS */
+section {
+    /* padding-top: 4vh; */
+    /* height: 96vh; */
+    margin: 0 1rem;
+    box-sizing: border-box;
+}
+
+
+/* Responsive Navbar */
+@media (max-width : 1024px) {
+    nav .checkbox {
+      display: block;
+    }
+  
+    ul {
+        position: absolute;
+        width: 100%;
+        height: calc(110vh - 100px);
+        left: -100%;
+        top: 90%;
+        background-color: black;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+  
+    nav #check:checked ~ ul {
+        left: 0;
+    }
+  
+    ul li a {
+        font-size: 2rem;
+    }
+}
+
+
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+    /* Profile Section */
+    #profile {
+        margin-top: calc(20vw * 0.01 + 25%);
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section__pic-container img{
+        width: 85%;
+        height: auto;
+        border-radius: 15px;
+    }
+    
+    .section__text__p1 {
+        font-size: 1.5rem;  
+    }
+
+    #profile .title {
+        font-size: 2.5rem;   
+    }
+
+    .speaker {
+        background-color: white;
+        border: none;
+    }
+
+    .section__text__p2 {
+        font-size: 1.5rem;  
+        margin-bottom: 0.5rem;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+    }
+    .btn {
+        font-weight: 600;
+        font-size: 0.75rem;  
+        padding: 0.75rem;
+        width: 7.5rem;  
+        border-radius: 15px;
+    }
+    .btn-color-1, .btn-color-2 {
+        border: black solid;
+        color: white;
+        background-color: black;
+    }
+
+    .socials-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .icon {
+        height: 2.75rem;   
+        margin-top: 0.75rem;
+    }
+}

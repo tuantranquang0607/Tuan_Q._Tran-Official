@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Tuan Q. Tran | Portfolio</title>
+
+        <link rel="stylesheet" href="index.css" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+        <script src="app.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav__content">
+                <h1 class="logo">Tuan</a></h1>
+
+                <label for="check" class="checkbox">
+                    <i class="ri-menu-line"></i>
+                </label>
+
+                <input type="checkbox" name="check" id="check" />
+
+                <ul>
+                    <li><a href="#">Home Page</a></li>
+                    <li><a href="#">Game Projects</a></li>
+                    <li><a href="#">Web Project</a></li>
+                    <li><a href="#">Artworks</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!-- Profile Section -->
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="../assets/right-face-selfie.jpg" alt=""/>
+            </div>
+  
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <button class="speaker" onclick="playPronunciation()"> <h1 class="title">Tuấn,</h1></button>
+                <audio id="pronunciationAudio" src="../assets/pronunciation_vi_tuấn.mp3"></audio>
+                <p class="section__text__p2">who's trying to be<br> <span class="text"></span></p>
+            
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('../assets/Q. Tuan Tran - Resume.pdf')">
+                    Download CV
+                    </button>
+
+                    <button class="btn btn-color-1" onclick="location.href='#contact'">
+                    Contact Info
+                    </button>
+                </div>
+              
+                <div class="socials-container">
+                    <img
+                    src="../assets/linkedin.png"
+                    class="icon"
+                    onclick="location.href='https://linkedin.com/'"
+                    />
+                    <img
+                    src="../assets/email.png"
+                    class="icon"
+                    onclick="location.href='mailto:tuan.tran6703@gmail.com'"
+                    />
+                    <img
+                    src="../assets/github.png"
+                    class="icon"
+                    onclick="location.href='https://github.com/'"
+                    />
+                    <img
+                    src="../assets/facebook.png"
+                    class="icon"
+                    onclick="location.href='https://www.facebook.com/profile.php?id=100030823129717'"
+                    />
+                    <img
+                    src="../assets/instagram.png"
+                    class="icon"
+                    onclick="location.href='https://www.instagram.com/mr.moony__/'"
+                    />
+                    <img
+                    src="../assets/steam.png"
+                    class="icon"
+                    onclick="location.href='https://steamcommunity.com/profiles/76561199139404335/'"
+                    />
+                </div>
+            </div>
+        </section>
+  
+    </body>
+</html>
