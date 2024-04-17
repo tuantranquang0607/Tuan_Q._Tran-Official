@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 
-
 * {
     margin: 0;
     padding: 0;
@@ -12,17 +11,27 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* SECTIONS */
 section {
-    /* padding-top: 4vh; */
-    /* height: 96vh; */
     margin: 0 1rem;
     box-sizing: border-box;
 }
 
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+footer p {
+    font-size: 100%;  
+}
+
+/* NAVBAR */
 nav {
     width: 100%;
     position: fixed;
@@ -42,10 +51,8 @@ nav {
     justify-content: space-between;
 }
 
-nav .logo a {
-    font-size: 1.5rem;
+nav .logo {
     font-weight: 600;
-    transition: 0.3s;
 }
 
 nav .checkbox {
@@ -65,7 +72,6 @@ ul {
     align-items: center;
     gap: 1rem;
     list-style: none;
-    transition: left 0.3s;
 }
 
 ul li a {
@@ -73,18 +79,27 @@ ul li a {
     border: 2px solid transparent;
     text-decoration: none;
     font-weight: 600;
-    transition: 0.3s;
     color: white;
     border: white solid 2px;
     border-radius: 15px;
 }
 
 
-/* Responsive Navbar */
+/* RESPONSIVE NAVBAR */
 @media (max-width : 1024px) {
+    .nav__content {
+        padding-top: 1rem;
+    }
     nav .checkbox {
       display: block;
     }
+    nav .checkbox i {
+        cursor: pointer;
+    }
+    nav #check:checked ~ ul {
+        left: 0;
+    }
+
     ul {
         position: absolute;
         width: 100%;
@@ -96,27 +111,29 @@ ul li a {
         justify-content: center;
         gap: 2.5rem;
     }
-  
-    nav .checkbox i {
-        transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        font-size: 3rem;
-        cursor: pointer;
-    }
-    nav #check:checked ~ ul {
-        left: 0;
-    }
-  
     ul li a {
         font-size: 2rem;
     }
 }
 
 
-/* Mobile Devices */
+/* MOBILE DEVICES */
 @media only screen and (max-width: 767px) {
+    /* Nav */
+    nav .logo {
+        font-size: 2rem;
+    }
+
+    nav .checkbox i {
+        font-size: 2.75rem;
+        border: black solid 0.15rem;
+        border-radius: 7.5px;
+    }
+
     /* Profile Section */
     #profile {
-        margin-top: calc(20vw * 0.01 + 25%);
+        margin-top: calc(20vw * 0.01 + 27.5%);
+        margin-bottom: 5%;
         flex-direction: column;
         text-align: center;
     }
@@ -127,12 +144,15 @@ ul li a {
         border-radius: 15px;
     }
     
+    .section__text {
+        margin-top: 5%;
+    }
     .section__text__p1 {
-        font-size: 1.5rem;  
+        font-size: 2rem;  
     }
 
     #profile .title {
-        font-size: 2.5rem;   
+        font-size: 5rem;   
     }
 
     .speaker {
@@ -141,20 +161,20 @@ ul li a {
     }
 
     .section__text__p2 {
-        font-size: 1.5rem;  
-        margin-bottom: 0.5rem;
+        font-size: 1.75rem;  
     }
 
     .btn-container {
         display: flex;
         justify-content: center;
-        gap: 1.25rem;
+        gap: 1.5rem;
+        margin-top: 7.5%;
     }
     .btn {
         font-weight: 600;
-        font-size: 0.75rem;  
+        font-size: 1rem;  
         padding: 0.75rem;
-        width: 7.5rem;  
+        width: 9rem;  
         border-radius: 15px;
     }
     .btn-color-1, .btn-color-2 {
@@ -166,11 +186,146 @@ ul li a {
     .socials-container {
         display: flex;
         justify-content: center;
-        gap: 1rem;
+        gap: 3.5%;
+        margin-top: 5%;
     }
 
     .icon {
-        height: 2.75rem;   
-        margin-top: 0.75rem;
+        height: 3rem;
+    }
+
+    /* About Section */
+    #about {
+        margin-bottom: 5%;
+    }
+    #about .section__text__p1 {
+        font-size: 1.25rem;  
+        text-align: center;
+    }
+
+    #about .title {
+        font-size: 2rem;   
+        text-align: center;
+    }
+
+    .text-container p {
+        text-align: center;
+        font-size: 1rem;  
+        text-justify: distribute-all-lines;
+    }
+
+    .logos {
+        margin-top: -1rem;
+        margin-bottom: -1.25rem;
+    }
+    .logos-slide img {
+        width: 30px;  
+        height: auto;
+    }
+
+    /* Projects Section */
+    #projects {
+        margin-bottom: 2.5%;
+    }
+    #projects .section__text__p1 {
+        font-size: 1.25rem;  
+        text-align: center;
+    }
+
+    #projects .title {
+        font-size: 2rem;  
+        text-align: center;
+    }
+
+    .project-details-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+    }
+    
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .project-card {
+        position: relative;
+        padding-bottom: 5%;
+        display: block;  /* Adjusted for block-level containing link and image. */
+        border-radius: 15px;  /* Optional for rounded corners on the card. */
+        overflow: hidden;  /* Ensures no overflow outside the rounded borders. */
+    }
+    
+    .project-card a {
+        display: block;
+        color: inherit;  /* Ensures text inherits color, not default blue. */
+        text-decoration: none;  /* Removes underline from links. */
+    }
+    
+    .project-card img {
+        width: 100%;   
+        height: 200px;  
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        border-radius: 15px;  /* Applies rounding to the image. */
+    }
+    
+    .project-card h2 {
+        position: absolute;
+        top: 50%;  /* Positions the top of the element at the middle of the parent. */
+        left: 50%;  /* Centers the element according to the left edge. */
+        transform: translate(-50%, -50%);  /* Adjusts position to truly center the text. */
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+        color: white;  /* For better visibility over images. */
+        margin: 0;  /* Removes any default margin. */
+        padding: 10px 0;  /* Adds vertical padding for visual comfort. */
+    }
+
+    /* Contact Section */
+    #contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+
+    #contact .section__text__p1 {
+        font-size: 1.25rem;   
+        text-align: center;
+    }
+
+    #contact .title {
+        font-size: 2rem;  
+        text-align: center;
+    }
+
+    .contact-info-upper-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact-info-container {
+        display: flex;
+        margin-bottom: 0.25rem;
+        padding: 0.15rem;
+        text-align: center;
+        border: black 0.1rem solid;
+        border-radius: 15px;
+    }
+    .contact-info-container p {
+        font-size: 1.19rem;   
+        word-break: break-all;
+    }
+    .contact-info-container p a {
+        color: black;
+    }
+
+    .contact-icon {
+        height: 1.75rem;   
+        width: auto;
+        margin: 0.25rem;
     }
 }

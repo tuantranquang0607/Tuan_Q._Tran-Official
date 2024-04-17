@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Text writing animation
     const typed = new Typed(".text", {
-        strings: ["a Web developer 😗", "a Game developer 😎", "an UI designer 🤨", "a digital artist 🤔"],
+        strings: ["a Game developer 🎮", "a Web developer 💻", "a digital artist 🎨"],
         typeSpeed: 55,
         backSpeed: 25,
         backDelay: 75,
