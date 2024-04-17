@@ -76,14 +76,13 @@ ul {
 
 ul li a {
     padding: 0.5rem 1rem;
-    border: 2px solid transparent;
     text-decoration: none;
     font-weight: 600;
     color: white;
     border: white solid 2px;
     border-radius: 15px;
+    background-color: rgb(46, 46, 46);
 }
-
 
 /* RESPONSIVE NAVBAR */
 @media (max-width : 1024px) {
@@ -209,9 +208,10 @@ ul li a {
     }
 
     .text-container p {
-        text-align: center;
         font-size: 1rem;  
-        text-justify: distribute-all-lines;
+        padding: 1.5%; /* Adds padding inside the paragraph for a better text block appearance */
+        text-align: justify; /* Justifies the text for a cleaner, more formal appearance */
+        background-color: #f4f4f4; /* Optional: a light background to highlight the text block */
     }
 
     .logos {
@@ -235,16 +235,6 @@ ul li a {
     #projects .title {
         font-size: 2rem;  
         text-align: center;
-    }
-
-    .project-details-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
-    }
-    
-    .project-grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
     }
     
     .project-card {
@@ -314,6 +304,7 @@ ul li a {
         text-align: center;
         border: black 0.1rem solid;
         border-radius: 15px;
+        background-color: #f0f0f0
     }
     .contact-info-container p {
         font-size: 1.19rem;   
@@ -327,5 +318,477 @@ ul li a {
         height: 1.75rem;   
         width: auto;
         margin: 0.25rem;
+    }
+}
+
+/* TABLET DEVICES */
+@media only screen and ( min-width: 768px) and (max-width: 1024px) {
+    /* Nav */
+    nav .logo {
+        font-size: 3rem;
+    }
+
+    nav .checkbox i {
+        font-size: 3.5rem;
+        border: black solid 0.15rem;
+        border-radius: 7.5px;
+    }
+
+    ul li a {
+        font-size: 3.5rem;
+    }
+
+    /* Profile Section */
+    #profile {
+        margin-top: 15%;
+        margin-bottom: 5%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section__pic-container img{
+        width: 65%;  
+        height: auto;
+        border-radius: 15px;
+    }
+    
+    .section__text__p1 {
+        font-size: 3rem;  
+        margin-top: 1%;
+    }
+
+    #profile .title {
+        font-size: 4rem;  
+    }
+
+    .speaker {
+        background-color: white;
+        border: none;
+    }
+
+    .section__text__p2 {
+        font-size: 2.75rem;  
+        margin-bottom: 0.5rem;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 2.5%;
+    }
+    .btn {
+        font-weight: 600;
+        font-size: 1.75rem;   
+        padding: 0.5rem; 
+        width: 15rem;   
+        height: 4.5rem;   
+        border-radius: 15px;
+    }
+    .btn-color-1, .btn-color-2 {
+        border: black solid;
+        color: white;
+        background-color: black;
+    }
+
+    .socials-container {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .icon {
+        height: 5rem;   
+        margin-top: 2.5%;   
+    }
+
+    /* About Section */
+    #about {
+        margin-bottom: 5%;
+    }
+
+    #about .section__text__p1 {
+        font-size: 2rem;    
+        text-align: center;
+    }
+    #about .title {
+        font-size: 3rem;    
+        text-align: center;
+    }
+
+    .text-container p {
+        font-size: 1.75rem;  
+        padding: 1%;
+        text-align: justify; /* Justifies the text for a cleaner, more formal appearance */
+        background-color: #f4f4f4; /* Optional: a light background to highlight the text block */
+    }
+
+    .logos {
+        display: flex;       /* Sets the .logos container to use flexbox */
+        justify-content: center; /* Centers the content horizontally */
+        align-items: center; /* Centers the content vertically (if needed) */
+    }
+    
+    .logos-slide {
+        display: flex;       /* Enables flexbox for direct children, which are img elements here */
+        flex-wrap: wrap;     /* Allows the images to wrap onto multiple lines */
+        justify-content: center; /* Centers the images horizontally */
+        align-items: center; /* Aligns images vertically */
+        gap: 10px;           /* Adds space between the images */
+    }
+    
+    .logos-slide img {
+        width: 55px;    /* Optional: Sets a maximum width for each image */
+        height: auto;        /* Maintains aspect ratio */
+    }
+
+    /* Projects Section */
+    #projects {
+        margin-bottom: 2%;
+    }
+    #projects .section__text__p1 {
+        font-size: 2rem;  
+        text-align: center;
+    }
+
+    #projects .title {
+        font-size: 3rem;  
+        text-align: center;
+    }
+    
+    .project-card {
+        position: relative;
+        padding-bottom: 2.5%;
+        display: block;  /* Adjusted for block-level containing link and image. */
+        border-radius: 15px;  /* Optional for rounded corners on the card. */
+        overflow: hidden;  /* Ensures no overflow outside the rounded borders. */
+    }
+    
+    .project-card a {
+        display: block;
+        color: inherit;  /* Ensures text inherits color, not default blue. */
+        text-decoration: none;  /* Removes underline from links. */
+    }
+    
+    .project-card img {
+        width: 100%;   
+        height: 250px;  
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        border-radius: 15px;  /* Applies rounding to the image. */
+    }
+    
+    .project-card h2 {
+        position: absolute;
+        top: 50%;  /* Positions the top of the element at the middle of the parent. */
+        left: 50%;  /* Centers the element according to the left edge. */
+        transform: translate(-50%, -50%);  /* Adjusts position to truly center the text. */
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+        color: white;  /* For better visibility over images. */
+        margin: 0;  /* Removes any default margin. */
+        padding: 10px 0;  /* Adds vertical padding for visual comfort. */
+    }
+
+    /* Contact Section */
+    #contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 2.5%;
+    }
+
+    #contact .section__text__p1 {
+        font-size: 2rem;   
+        text-align: center;
+    }
+
+    #contact .title {
+        font-size: 3rem;  
+        text-align: center;
+    }
+
+    .contact-info-upper-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact-info-container {
+        display: flex;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+        text-align: center;
+        border: black 0.1rem solid;
+        border-radius: 15px;
+        background-color: #f0f0f0
+    }
+    .contact-info-container p {
+        font-size: 2.25rem;   
+        word-break: break-all;
+    }
+    .contact-info-container p a {
+        color: black;
+    }
+
+    .contact-icon {
+        height: 3rem;   
+        width: auto;
+        margin: 0.25rem;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 150%;  
+    }
+}
+
+/* PC DEVICES */
+@media only screen and ( min-width: 1440px) {
+    /* Nav */
+    .logo {
+        font-size: 3rem;
+    }
+    ul li a {
+        padding: 0.5rem 1rem;
+        color: black;
+        border: none;
+        background-color: white;
+        font-size: 1.5rem;
+    }
+    
+    
+    /* Profile Section */
+    #profile {
+        margin-top: 12.5%;
+        margin-bottom: 2.5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #profile .title {
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .speaker {
+        background-color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .section__pic-container img {
+        width: 75%;
+        height: auto;
+        border-radius: 15px;
+    }
+    .section__text {
+        align-self: center;
+        text-align: center;
+    }
+    .section__text__p1 {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    .section__text__p2 {
+        margin-bottom: 0.5rem;
+        font-size: 3rem;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .btn {
+        font-weight: 600;
+        transition: all 300ms ease;
+        padding: 1rem;
+        width: 12rem;
+        height: 5rem;
+        border-radius: 2rem;
+        font-size: 1.5rem;
+    }
+    .btn-color-1, .btn-color-2 {
+        border: black solid;
+        background-color: white;
+    }
+    .btn-color-1:hover, .btn-color-2:hover {
+        cursor: pointer;
+        color: white;
+        background-color: black;
+    }
+
+    .socials-container {
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+    }
+
+    .icon {
+        cursor: pointer;
+        height: 5rem;
+        margin-top: 1.5rem;
+    }
+    .icon:hover {
+        transform: scale(1.25);
+        transition: transform 0.5s ease;
+    }
+
+    /* About Section */
+    #about {
+        position: relative;
+        margin-bottom: 2.5rem;
+    }
+    #about .section__text__p1 {
+        font-size: 2rem;
+    }
+    #about .title {
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .text-container p {
+        font-size: 1.75rem;  
+        padding: 0.5%;
+        text-align: justify; /* Justifies the text for a cleaner, more formal appearance */
+        background-color: #f4f4f4; /* Optional: a light background to highlight the text block */
+    }
+
+    .logos {
+        display: flex;       /* Sets the .logos container to use flexbox */
+        justify-content: center; /* Centers the content horizontally */
+        align-items: center; /* Centers the content vertically (if needed) */
+    }
+    
+    .logos-slide {
+        display: flex;       /* Enables flexbox for direct children, which are img elements here */
+        flex-wrap: wrap;     /* Allows the images to wrap onto multiple lines */
+        justify-content: center; /* Centers the images horizontally */
+        align-items: center; /* Aligns images vertically */
+        gap: 15px;           /* Adds space between the images */
+    }
+    
+    .logos-slide img {
+        width: 65px;    /* Optional: Sets a maximum width for each image */
+        height: auto;        /* Maintains aspect ratio */
+    }
+
+    /* Projects Section */
+    #projects {
+        margin-bottom: 2.5%;
+    }
+    #projects .section__text__p1 {
+        font-size: 2rem;
+    }
+    #projects .title {
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .project-grid {
+        font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    }
+    
+    .project-card {
+        position: relative; /* Set the position to relative to allow absolute positioning of children */
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center children vertically */
+        align-items: center; /* Center children horizontally */
+        overflow: hidden; /* Optional: Prevents overflow from rounded corners */
+    }
+    
+    .project-card img {
+        width: 500px;
+        height: 600px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 15px;
+        filter: grayscale(100%);
+        transition: filter 0.25s; /* Smooth transition for hover effect */
+    }
+    
+    .project-card img:hover {
+        filter: grayscale(0%);
+    }
+    
+    .project-card h2 {
+        position: absolute; /* Position the h2 absolutely within the relative parent */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust position to truly center the text */
+        text-align: center;
+        font-size: 3.5rem;
+        color: white; /* Ensures text is visible on top of images */
+        width: 100%; /* Stretch to full width of the container */
+        margin: 0; /* Remove any default margin */
+        padding: 10px 0; /* Vertical padding */
+    }
+    
+
+    /* Contact Section */
+    #contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 2.5%;
+    }
+    #contact .section__text__p1 {
+        font-size: 2rem;
+    }
+    #contact .title {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #contact p:hover a {
+        background: linear-gradient(45deg, #0004ff, #ff0019, #00ff22, #ff00b3);
+        color: transparent;
+        background-clip: text;
+    }
+    
+    .contact-info-upper-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .contact-info-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        border: black 0.25rem solid;
+        border-radius: 15px;
+        background-color: #f0f0f0;
+    }
+    .contact-info-container p {
+        font-size: 2.75rem;
+    }
+    .contact-info-container p a {
+        color: black;
+    }
+    
+    .contact-icon {
+        cursor: default;
+        width: 3.5rem;
+        height: auto;
+    } 
+    .contact-icon:hover {
+        transition: none;
+        transform: none;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 175%;  
     }
 }
