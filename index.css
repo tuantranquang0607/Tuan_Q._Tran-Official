@@ -551,12 +551,60 @@ ul li a {
     .logo {
         font-size: 3rem;
     }
+
     ul li a {
         padding: 0.5rem 1rem;
-        color: black;
         border: none;
         background-color: white;
         font-size: 1.5rem;
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    ul li a::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 7.5px;
+        bottom: -10%;
+        left: 0;
+        background-color: black;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.25s ease-in-out 0.125s;
+        border-radius: 15px;
+    }
+    
+    ul li a:hover::before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+    
+    ul li a.green:hover {
+        color: green;
+    }
+    
+    ul li a.green::before {
+        background-color: rgb(0, 155, 0);
+    }
+    
+    ul li a.blue:hover {
+        color: blue;
+    }
+    
+    ul li a.blue::before {
+        background-color: rgb(0, 0, 204);
+    }
+    
+    ul li a.red:hover {
+        color: red;
+    }
+    
+    ul li a.red::before {
+        background-color: rgb(207, 0, 0);
     }
     
     
@@ -730,7 +778,6 @@ ul li a {
         margin: 0; /* Remove any default margin */
         padding: 10px 0; /* Vertical padding */
     }
-    
 
     /* Contact Section */
     #contact {
@@ -746,9 +793,8 @@ ul li a {
         font-size: 3rem;
         text-align: center;
     }
-
     #contact p:hover a {
-        background: linear-gradient(45deg, #0004ff, #ff0019, #00ff22, #ff00b3);
+        background: linear-gradient(45deg, red, orange, yellow, green,blue, purple);
         color: transparent;
         background-clip: text;
     }
@@ -768,10 +814,10 @@ ul li a {
         padding: 0.5rem;
         border: black 0.25rem solid;
         border-radius: 15px;
-        background-color: #f0f0f0;
+        background-color: #dddddd;
     }
     .contact-info-container p {
-        font-size: 2.75rem;
+        font-size: 2.5rem;
     }
     .contact-info-container p a {
         color: black;
