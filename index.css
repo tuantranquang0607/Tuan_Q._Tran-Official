@@ -208,7 +208,7 @@ ul li a {
     }
 
     .text-container p {
-        font-size: 1rem;  
+        font-size: 0.875rem;  
         padding: 1.5%; /* Adds padding inside the paragraph for a better text block appearance */
         text-align: justify; /* Justifies the text for a cleaner, more formal appearance */
         background-color: #f4f4f4; /* Optional: a light background to highlight the text block */
@@ -278,7 +278,6 @@ ul li a {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-bottom: 5%;
     }
 
     #contact .section__text__p1 {
@@ -419,7 +418,7 @@ ul li a {
     }
 
     .text-container p {
-        font-size: 1.75rem;  
+        font-size: 1.25rem;  
         padding: 1%;
         text-align: justify; /* Justifies the text for a cleaner, more formal appearance */
         background-color: #f4f4f4; /* Optional: a light background to highlight the text block */
@@ -499,7 +498,6 @@ ul li a {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-bottom: 2.5%;
     }
 
     #contact .section__text__p1 {
@@ -702,7 +700,7 @@ ul li a {
     }
     
     .text-container p {
-        font-size: 1.75rem;  
+        font-size: 1.5rem;  
         padding: 0.5%;
         text-align: justify; /* Justifies the text for a cleaner, more formal appearance */
         background-color: #f4f4f4; /* Optional: a light background to highlight the text block */
@@ -786,7 +784,6 @@ ul li a {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-bottom: 2.5%;
     }
     #contact .section__text__p1 {
         font-size: 1.5rem;
@@ -997,7 +994,7 @@ ul li a {
     }
     
     .text-container p {
-        font-size: 1.75rem;  
+        font-size: 1.70rem;  
         padding: 0.5%;
         text-align: justify; /* Justifies the text for a cleaner, more formal appearance */
         background-color: #f4f4f4; /* Optional: a light background to highlight the text block */
@@ -1081,7 +1078,6 @@ ul li a {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-bottom: 2.5%;
     }
     #contact .section__text__p1 {
         font-size: 2rem;
@@ -1203,7 +1199,7 @@ ul li a {
     }
 
     .text-container p {
-        font-size: 2.5rem;  
+        font-size: 2.25rem;  
         padding: 1%;
     }
 
