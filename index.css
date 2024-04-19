@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 
 * {
@@ -45,7 +44,7 @@ nav {
     max-width: 90%;
     margin: auto;
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,7 +84,7 @@ ul li a {
 }
 
 /* RESPONSIVE NAVBAR */
-@media (max-width : 1024px) {
+@media (max-width: 1024px) {
     .nav__content {
         padding-top: 1rem;
     }
@@ -115,7 +114,6 @@ ul li a {
     }
 }
 
-
 /* MOBILE DEVICES */
 @media only screen and (max-width: 767px) {
     /* Nav */
@@ -141,6 +139,8 @@ ul li a {
         width: 85%;
         height: auto;
         border-radius: 15px;
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(to bottom, black, gray);
     }
     
     .section__text {
@@ -322,7 +322,7 @@ ul li a {
 }
 
 /* TABLET DEVICES */
-@media only screen and ( min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     /* Nav */
     nav .logo {
         font-size: 3rem;
@@ -340,7 +340,7 @@ ul li a {
 
     /* Profile Section */
     #profile {
-        margin-top: 15%;
+        margin-top: 17.5%;
         margin-bottom: 5%;
         flex-direction: column;
         text-align: center;
@@ -350,6 +350,8 @@ ul li a {
         width: 65%;  
         height: auto;
         border-radius: 15px;
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(to bottom, black, gray);
     }
     
     .section__text__p1 {
@@ -545,8 +547,302 @@ ul li a {
     }
 }
 
-/* PC DEVICES */
-@media only screen and ( min-width: 1440px) {
+/* LAPTOP DEVICES */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* Nav */
+    .logo {
+        font-size: 2.25rem;
+    }
+
+    ul li a {
+        padding: 0.25rem 0.75rem;
+        border: none;
+        background-color: white;
+        font-size: 1.25rem;
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        transition: color 0.25s ease-in-out;
+    }
+    
+    ul li a::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 7.5px;
+        bottom: -10%;
+        left: 0;
+        background-color: black;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.25s ease-in-out 0.125s;
+        border-radius: 15px;
+    }
+    
+    ul li a:hover::before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+    
+    ul li a.green:hover {
+        color: green;
+    }
+    
+    ul li a.green::before {
+        background-color: rgb(0, 155, 0);
+    }
+    
+    ul li a.blue:hover {
+        color: blue;
+    }
+    
+    ul li a.blue::before {
+        background-color: rgb(0, 0, 204);
+    }
+    
+    ul li a.red:hover {
+        color: red;
+    }
+    
+    ul li a.red::before {
+        background-color: rgb(207, 0, 0);
+    }
+    
+    /* Profile Section */
+    #profile {
+        margin-top: 10%;
+        margin-bottom: 2.5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #profile .title {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+
+    .speaker {
+        background-color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .section__pic-container img {
+        width: 75%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(to bottom, black, gray);
+    }
+    .section__text {
+        align-self: center;
+        text-align: center;
+    }
+    .section__text__p1 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .section__text__p2 {
+        margin-bottom: 0.5rem;
+        font-size: 2.25rem;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .btn {
+        font-weight: 600;
+        transition: all 0.25s ease;
+        padding: 1rem;
+        width: 10rem;
+        height: 3.5rem;
+        border-radius: 15px;
+        font-size: 1rem;
+    }
+    .btn-color-1, .btn-color-2 {
+        border: black solid;
+        background-color: white;
+    }
+    .btn-color-1:hover, .btn-color-2:hover {
+        cursor: pointer;
+        color: white;
+        background-color: black;
+    }
+
+    .socials-container {
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+    }
+
+    .icon {
+        cursor: pointer;
+        height: 3.5rem;
+        margin-top: 1.5rem;
+    }
+    .icon:hover {
+        transform: scale(1.25);
+        transition: transform 0.5s ease;
+    }
+
+    /* About Section */
+    #about {
+        position: relative;
+        margin-bottom: 2.5rem;
+    }
+    #about .section__text__p1 {
+        font-size: 1.5rem;
+    }
+    #about .title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .text-container p {
+        font-size: 1.75rem;  
+        padding: 0.5%;
+        text-align: justify; /* Justifies the text for a cleaner, more formal appearance */
+        background-color: #f4f4f4; /* Optional: a light background to highlight the text block */
+    }
+
+    .logos {
+        display: flex;       /* Sets the .logos container to use flexbox */
+        justify-content: center; /* Centers the content horizontally */
+        align-items: center; /* Centers the content vertically (if needed) */
+    }
+    
+    .logos-slide {
+        display: flex;       /* Enables flexbox for direct children, which are img elements here */
+        flex-wrap: wrap;     /* Allows the images to wrap onto multiple lines */
+        justify-content: center; /* Centers the images horizontally */
+        align-items: center; /* Aligns images vertically */
+        gap: 15px;           /* Adds space between the images */
+    }
+    
+    .logos-slide img {
+        width: 65px;    /* Optional: Sets a maximum width for each image */
+        height: auto;        /* Maintains aspect ratio */
+    }
+
+    /* Projects Section */
+    #projects {
+        margin-bottom: 2.5%;
+    }
+    #projects .section__text__p1 {
+        font-size: 1.5rem;
+    }
+    #projects .title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+    
+    .project-card {
+        position: relative; /* Set the position to relative to allow absolute positioning of children */
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center children vertically */
+        align-items: center; /* Center children horizontally */
+        overflow: hidden; /* Optional: Prevents overflow from rounded corners */
+    }
+    
+    .project-card img {
+        width: 350px;
+        height: 450px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 15px;
+        filter: grayscale(100%);
+        transition: filter 0.25s; /* Smooth transition for hover effect */
+    }
+    
+    .project-card img:hover {
+        filter: grayscale(0%);
+    }
+    
+    .project-card h2 {
+        position: absolute; /* Position the h2 absolutely within the relative parent */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust position to truly center the text */
+        text-align: center;
+        font-size: 2.5rem;
+        color: white; /* Ensures text is visible on top of images */
+        width: 100%; /* Stretch to full width of the container */
+        margin: 0; /* Remove any default margin */
+        padding: 10px 0; /* Vertical padding */
+    }
+
+    /* Contact Section */
+    #contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 2.5%;
+    }
+    #contact .section__text__p1 {
+        font-size: 1.5rem;
+    }
+    #contact .title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    #contact p:hover a {
+        background: linear-gradient(45deg, red, orange, yellow, green,blue, purple);
+        color: transparent;
+        background-clip: text;
+    }
+    
+    .contact-info-upper-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .contact-info-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        border: black 0.25rem solid;
+        border-radius: 15px;
+        background-color: #dddddd;
+    }
+    .contact-info-container p {
+        font-size: 2rem;
+    }
+    .contact-info-container p a {
+        color: black;
+    }
+    
+    .contact-icon {
+        cursor: default;
+        width: 3.5rem;
+        height: auto;
+    } 
+    .contact-icon:hover {
+        transition: none;
+        transform: none;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 175%;  
+    }
+}
+
+/* DESKTOP DEVICES */
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
     /* Nav */
     .logo {
         font-size: 3rem;
@@ -561,7 +857,7 @@ ul li a {
         display: inline-block;
         text-decoration: none;
         color: black;
-        transition: color 0.3s ease-in-out;
+        transition: color 0.25s ease-in-out;
     }
     
     ul li a::before {
@@ -631,6 +927,8 @@ ul li a {
         width: 75%;
         height: auto;
         border-radius: 15px;
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(to bottom, black, gray);
     }
     .section__text {
         align-self: center;
@@ -656,7 +954,7 @@ ul li a {
         padding: 1rem;
         width: 12rem;
         height: 5rem;
-        border-radius: 2rem;
+        border-radius: 15px;
         font-size: 1.5rem;
     }
     .btn-color-1, .btn-color-2 {
@@ -737,7 +1035,6 @@ ul li a {
     }
     
     .project-grid {
-        font-family: Arial, Helvetica, sans-serif;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
     }
@@ -836,5 +1133,131 @@ ul li a {
     /* Footer */
     footer p {
         font-size: 175%;  
+    }
+}
+
+/* 4K DEVICES */
+@media only screen and (min-width: 2552px) {
+    /* Nav */
+    .logo {
+        font-size: 5rem;
+    }
+
+    ul li a {
+        padding: 0.75rem 1.25rem;
+        font-size: 2.5rem;
+    }
+
+    ul li a::before {
+        height: 10px;
+    }
+
+    /* Profile Section */
+    #profile {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        gap: 10%;
+    }
+    #profile .title {
+        font-size: 7.5rem;
+    }    
+
+    .section__pic-container img {
+        width: 110%;
+    }
+    .section__text__p1 {
+        font-size: 5rem;
+    }
+    
+    .section__text__p2 {
+        font-size: 4.5rem;
+    }
+
+    .btn-container {
+        gap: 2.5rem;
+    }
+    .btn {
+        width: 22.5rem;
+        height: 7.5rem;
+        font-size: 2.5rem;
+    }
+
+    .socials-container {
+        gap: 2rem;
+    }
+
+    .icon {
+        height: 7.5rem;
+        margin-top: 1.5rem;
+    }
+
+    /* About Section */
+    #about {
+        margin-bottom: 2.5%;
+    }
+    #about .section__text__p1 {
+        font-size: 3.5rem;
+    }
+    #about .title {
+        font-size: 5rem;
+    }
+
+    .text-container p {
+        font-size: 2.5rem;  
+        padding: 1%;
+    }
+
+    .logos-slide {
+        gap: 25px;           /* Adds space between the images */
+    }
+    .logos-slide img {
+        width: 100px;    /* Optional: Sets a maximum width for each image */
+    }
+
+    /* Projects Section */
+    #projects .section__text__p1 {
+        font-size: 3.5rem;
+    }
+    #projects .title {
+        font-size: 5rem;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+    }
+
+    .project-card {
+        padding: 10px;
+    }
+
+    .project-card img {
+        width: 800px;
+        height: 950px;
+    }
+
+    .project-card h2 {
+        font-size: 5rem;
+    }
+
+    /* Contact Section */
+    #contact .section__text__p1 {
+        font-size: 3.5rem;
+    }
+    #contact .title {
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .contact-info-container p {
+        font-size: 4.5rem;
+    }
+
+    .contact-icon {
+        width: 5rem;
+    } 
+
+    /* Footer */
+    footer p {
+        font-size: 200%;  
     }
 }
