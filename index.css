@@ -13,6 +13,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.title {
+    color: black;
+}
+
 /* SECTIONS */
 section {
     margin: 0 1rem;
