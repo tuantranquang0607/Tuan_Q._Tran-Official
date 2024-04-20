@@ -35,5 +35,6 @@ for (var i = 0; i < navLinks.length; i++) {
     navLinks[i].addEventListener('click', function() {
         // Uncheck the checkbox to close the menu
         document.getElementById('check').checked = false;
+        document.body.style.overflow = 'auto';
     });
 }
