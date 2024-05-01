@@ -153,6 +153,9 @@ ul li a {
     .section__text__p1 {
         font-size: 2rem;  
     }
+    .section__text .icon {
+        font-size: 2rem;
+    }
 
     #profile .title {
         font-size: 5rem;   
@@ -369,6 +372,10 @@ ul li a {
     .speaker {
         background-color: white;
         border: none;
+    }
+
+    .section__text .icon {
+        font-size: 2.25rem;
     }
 
     .section__text__p2 {
@@ -628,6 +635,10 @@ ul li a {
         background-color: white;
         border: none;
         cursor: pointer;
+    }
+
+    .section__text .icon {
+        font-size: 2.25rem;
     }
 
     .section__pic-container img {
@@ -922,6 +933,10 @@ ul li a {
         background-color: white;
         border: none;
         cursor: pointer;
+    }
+
+    .section__text .icon {
+        font-size: 2.5rem;
     }
 
     .section__pic-container img {
