@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 
 * {
@@ -45,7 +46,7 @@ nav {
 }
 
 nav .logo {
-    font-weight: 600;
+    font-family: 'Pacifico', cursive;
 }
 
 nav .checkbox {
@@ -163,7 +164,7 @@ ul li a {
     }
     
     .project-card p {
-        font-size: 1.25rem;
+        font-size: 1.095rem;
         text-align: center;
     }
     
