@@ -137,13 +137,16 @@ ul li a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 5rem;
+        margin-top: 22.5%;
     }
 
     .project-card {
-        width: 90%;
-        margin: 10px auto;
+        width: 97.5%;
         position: relative;
+        border: 1.5px solid black;
+        border-radius: 15px;
+        margin-bottom: 0.5rem;
+        padding: 3.5px;
     }
     
     .project-card img {
@@ -211,9 +214,12 @@ ul li a {
     }
 
     .project-card {
-        width: 90%;
-        margin: 10px auto;
+        width: 80%;
+        margin-bottom: 0.75rem;
         position: relative;
+        border: 1.75px solid black;
+        border-radius: 15px;
+        padding: 5px;
     }
     
     .project-card img {
@@ -322,18 +328,21 @@ ul li a {
         display: flex;
         flex-direction: row;
         margin-top: 7.5rem;
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
-        gap: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        gap: 1%;
     }
 
     .project-card {
-        width: 90%;
+        width: 100%;
         margin: 10px auto;
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between; 
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 7.5px; 
     }
     
     .project-card img {
@@ -446,17 +455,22 @@ ul li a {
     .project-grid {
         display: flex;
         flex-direction: row;
-        align-items: center;
         margin-top: 7.5rem;
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
-        gap: 2rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        gap: 1rem;
     }
 
     .project-card {
-        width: 90%;
+        width: 100%;
         margin: 10px auto;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 7.5px;
     }
     
     .project-card img {
@@ -521,7 +535,7 @@ ul li a {
 
     /* Project Section */
     .project-grid {
-        margin-top: 10rem;
+        margin-top: 7%;
     }
 
     .project-card {

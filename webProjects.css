@@ -136,13 +136,17 @@ ul li a {
     .project-grid {
         display: flex;
         flex-direction: column;
-        margin-top: 5rem;
+        align-items: center;
+        margin-top: 22.5%;
     }
 
     .project-card {
-        width: 90%;
-        margin: 10px auto;
+        width: 97.5%;
+        padding: 3.5px;
         position: relative;
+        border: 1.5px solid black;
+        border-radius: 15px;
+        margin-bottom: 0.5rem;
     }
     
     .project-card img {
@@ -160,7 +164,7 @@ ul li a {
         width: 100%;
         color: white;
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.75rem;
     }
     
     .project-card p {
@@ -205,13 +209,17 @@ ul li a {
     .project-grid {
         display: flex;
         flex-direction: column;
+        align-items: center;
         margin-top: 7.5rem;
     }
 
     .project-card {
-        width: 90%;
-        margin: 10px auto;
+        width: 80%;
+        margin-bottom: 0.75rem;
         position: relative;
+        border: 1.75px solid black;
+        border-radius: 15px;
+        padding: 5px;
     }
     
     .project-card img {
@@ -223,13 +231,13 @@ ul li a {
     
     .project-card h3 {
         position: absolute;
-        top: 40%;  
+        top: 30%;  
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
         color: white;
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 5rem;
     }
     
     .project-card p {
@@ -319,18 +327,21 @@ ul li a {
         display: flex;
         flex-direction: row;
         margin-top: 7.5rem;
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
-        gap: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        gap: 1%;
     }
 
     .project-card {
-        width: 90%;
+        width: 100%;
         margin: 10px auto;
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between; 
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 7.5px;
     }
     
     .project-card img {
@@ -342,13 +353,13 @@ ul li a {
     
     .project-card h3 {
         position: absolute;
-        top: 40%;  
+        top: 35%;  
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
         color: white;
         text-align: center;
-        font-size: 3rem;
+        font-size: 3.75rem;
     }
     
     .project-card p {
@@ -443,18 +454,21 @@ ul li a {
         display: flex;
         flex-direction: row;
         margin-top: 7.5rem;
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
-        gap: 2rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        gap: 1rem;
     }
 
     .project-card {
-        width: 90%;
+        width: 100%;
         margin: 10px auto;
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between; 
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 7.5px;
     }
     
     .project-card img {
@@ -472,7 +486,7 @@ ul li a {
         width: 100%;
         color: white;
         text-align: center;
-        font-size: 3.25rem;
+        font-size: 4.5rem;
     }
     
     .project-card p {
@@ -514,7 +528,7 @@ ul li a {
 
     /* Project Section */
     .project-grid {
-        margin-top: 10rem;
+        margin-top: 7%;
     }
     
     .project-card img {
