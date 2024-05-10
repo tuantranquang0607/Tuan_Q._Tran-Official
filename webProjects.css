@@ -164,7 +164,7 @@ ul li a {
         width: 100%;
         color: white;
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.75rem;
     }
     
     .project-card p {
@@ -231,13 +231,13 @@ ul li a {
     
     .project-card h3 {
         position: absolute;
-        top: 40%;  
+        top: 30%;  
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
         color: white;
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 5rem;
     }
     
     .project-card p {
@@ -333,6 +333,7 @@ ul li a {
     }
 
     .project-card {
+        width: 100%;
         margin: 10px auto;
         position: relative;
         display: flex;
@@ -352,13 +353,13 @@ ul li a {
     
     .project-card h3 {
         position: absolute;
-        top: 40%;  
+        top: 35%;  
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
         color: white;
         text-align: center;
-        font-size: 3rem;
+        font-size: 3.75rem;
     }
     
     .project-card p {
@@ -459,6 +460,7 @@ ul li a {
     }
 
     .project-card {
+        width: 100%;
         margin: 10px auto;
         position: relative;
         display: flex;
@@ -484,7 +486,7 @@ ul li a {
         width: 100%;
         color: white;
         text-align: center;
-        font-size: 3.25rem;
+        font-size: 4.5rem;
     }
     
     .project-card p {
@@ -526,7 +528,7 @@ ul li a {
 
     /* Project Section */
     .project-grid {
-        margin-top: 10rem;
+        margin-top: 7%;
     }
     
     .project-card img {
