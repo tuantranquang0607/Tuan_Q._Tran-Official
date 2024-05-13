@@ -216,19 +216,27 @@ ul li a {
     }
 
     .text-container p {
-        font-size: 0.875rem;  
+        font-size: 0.82rem;  
         padding: 1.5%; /* Adds padding inside the paragraph for a better text block appearance */
         text-align: justify; /* Justifies the text for a cleaner, more formal appearance */
         background-color: #f4f4f4; /* Optional: a light background to highlight the text block */
     }
 
     .logos {
-        margin-top: -1rem;
-        margin-bottom: -1.25rem;
+        margin-top: -5.5%;
+        margin-bottom: -6.5%;
+    }
+    .logos-slide {
+        display: flex;       /* Enables flexbox for direct children, which are img elements here */
+        flex-wrap: wrap;     /* Allows the images to wrap onto multiple lines */
+        justify-content: space-evenly; /* Space evenly */
+        align-items: center; /* Aligns images vertically */
+        gap: 1.85%;           /* Adds space between the images */
     }
     .logos-slide img {
         width: 30px;  
         height: auto;
+        margin-bottom: 1.5%;
     }
 
     /* Projects Section */
@@ -247,7 +255,7 @@ ul li a {
     
     .project-card {
         position: relative;
-        padding-bottom: 5%;
+        padding-bottom: 1.5%;
         display: block;  /* Adjusted for block-level containing link and image. */
         border-radius: 15px;  /* Optional for rounded corners on the card. */
         overflow: hidden;  /* Ensures no overflow outside the rounded borders. */
@@ -439,22 +447,20 @@ ul li a {
     }
 
     .logos {
-        display: flex;       /* Sets the .logos container to use flexbox */
-        justify-content: center; /* Centers the content horizontally */
-        align-items: center; /* Centers the content vertically (if needed) */
+        margin-top: -2.5%;
+        margin-bottom: -1%;
     }
-    
     .logos-slide {
         display: flex;       /* Enables flexbox for direct children, which are img elements here */
         flex-wrap: wrap;     /* Allows the images to wrap onto multiple lines */
-        justify-content: center; /* Centers the images horizontally */
+        justify-content: space-evenly; /* Centers the images horizontally */
         align-items: center; /* Aligns images vertically */
-        gap: 10px;           /* Adds space between the images */
+        gap: 20px;           /* Adds space between the images */
     }
-    
     .logos-slide img {
         width: 55px;    /* Optional: Sets a maximum width for each image */
         height: auto;        /* Maintains aspect ratio */
+        margin-bottom: -1.5%;
     }
 
     /* Projects Section */
@@ -473,7 +479,7 @@ ul li a {
     
     .project-card {
         position: relative;
-        padding-bottom: 2.5%;
+        padding-bottom: 1%;
         display: block;  /* Adjusted for block-level containing link and image. */
         border-radius: 15px;  /* Optional for rounded corners on the card. */
         overflow: hidden;  /* Ensures no overflow outside the rounded borders. */
