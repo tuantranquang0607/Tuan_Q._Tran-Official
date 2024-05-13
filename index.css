@@ -203,7 +203,7 @@ ul li a {
 
     /* About Section */
     #about {
-        margin-bottom: 5%;
+        margin-bottom: 2.5%;
     }
     #about .section__text__p1 {
         font-size: 1.25rem;  
@@ -427,7 +427,7 @@ ul li a {
 
     /* About Section */
     #about {
-        margin-bottom: 5%;
+        margin-bottom: 3.5%;
     }
 
     #about .section__text__p1 {
@@ -1250,7 +1250,7 @@ ul li a {
         gap: 25px;           /* Adds space between the images */
     }
     .logos-slide img {
-        width: 100px;    /* Optional: Sets a maximum width for each image */
+        width: 97.5px;    /* Optional: Sets a maximum width for each image */
     }
 
     /* Projects Section */
