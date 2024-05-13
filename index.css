@@ -143,7 +143,7 @@ ul li a {
     .section__pic-container img{
         width: 85%;
         height: auto;
-        border-radius: 15px;
+        border-radius: 25%;
         box-shadow: 0 0 10px 7.5px rgba(0, 0, 0, 0.5);
         background: linear-gradient(to bottom, black, gray);
     }
@@ -358,7 +358,7 @@ ul li a {
     .section__pic-container img{
         width: 65%;  
         height: auto;
-        border-radius: 15px;
+        border-radius: 25%;
         box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
         background: linear-gradient(to bottom, black, gray);
     }
@@ -627,6 +627,8 @@ ul li a {
     #profile {
         margin-top: 10%;
         margin-bottom: 2.5%;
+        margin-left: 5%;
+        margin-right: 5%;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -649,13 +651,15 @@ ul li a {
     .section__pic-container img {
         width: 75%;
         height: auto;
-        border-radius: 15px;
+        border-radius: 25%;
         box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
         background: linear-gradient(to bottom, black, gray);
+        margin-left: 10%;
     }
     .section__text {
         align-self: center;
         text-align: center;
+        margin-right: 10%;
     }
     .section__text__p1 {
         text-align: center;
@@ -926,6 +930,8 @@ ul li a {
     #profile {
         margin-top: 12.5%;
         margin-bottom: 2.5%;
+        margin-left: 5%;
+        margin-right: 5%;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -948,13 +954,15 @@ ul li a {
     .section__pic-container img {
         width: 75%;
         height: auto;
-        border-radius: 15px;
+        border-radius: 25%;
         box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
         background: linear-gradient(to bottom, black, gray);
+        margin-left: 10%;
     }
     .section__text {
         align-self: center;
         text-align: center;
+        margin-right: 5%;
     }
     .section__text__p1 {
         text-align: center;
@@ -1178,7 +1186,9 @@ ul li a {
     /* Profile Section */
     #profile {
         margin-top: 10%;
-        margin-bottom: 5%;
+        margin-bottom: 3.5%;
+        margin-left: 5%;
+        margin-right: 5%;
         gap: 10%;
     }
     #profile .title {
@@ -1186,7 +1196,7 @@ ul li a {
     }    
 
     .section__pic-container img {
-        width: 110%;
+        width: 85%;
     }
     .section__text__p1 {
         font-size: 5rem;
